@@ -1,0 +1,14 @@
+#TeXlipse project settings
+#Sat Apr 11 11:23:24 CEST 2015
+markTmpDer=true
+builderNum=2
+outputDir=
+makeIndSty=
+bibrefDir=
+outputFormat=pdf
+tempDir=tmp
+mainTexFile=Skript-Abivorbereitung-Mathe.tex
+outputFile=Skript-Abivorbereitung-Mathe.pdf
+langSpell=de
+markDer=true
+srcDir=

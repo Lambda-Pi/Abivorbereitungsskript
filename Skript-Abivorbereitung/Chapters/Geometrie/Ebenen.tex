@@ -1,0 +1,19 @@
+\section{Ebenen}
+Ebenso wie Geraden, können wir im 3D-Raum auch Ebenen darstellen. Dafür gibt es drei verschiedene Möglichkeiten die wir verwenden.
+
+\subsection{Parameterform}
+Um eine Ebene anhand von drei Punkten aufzustellen, ist die Parameterform am einfachsten. Sie ähnelt der Geradengleichung (ist also übersichtlicher auf dem ersten Blick) und die anderen beiden Formen lassen sich daraus leicht aufstellen (mit denen leichter weiter zu rechnen ist). Deshalb werden wir diese Form als Erstes zeigen, auch wenn man sie seltener nutzt. Zuerst haben wir wieder einen Stützvektor, wie bei der Geraden. Jedoch haben wir statt einem gleich zwei 'Richtungsvektoren', die Spannvektoren genannt werden (sie Spannen die Ebene auf). Diese berechnet man, indem man zwei Vektoren zwischen je zwei Punkten berechnet und eine skalare Variable mit ihnen multipliziert:
+\[E:\ \vec{x}=\vec{a}+s\cdot \vec{b}+t\cdot \vec{c}\]
+
+\subsection{Normalenform}
+Mit der Normalenform können wir leichter rechnen, vergleichen und Abstände bestimmen. Die Überlegung dahinter ist ein wenig umständlicher, bei näherer Betrachtung aber nicht zwingend schwerer. Zuerst müssen wir den Normalenvektor \(\vec{n}\) finden, welcher orthogonal auf der Ebene steht. Am einfachsten und schnellsten geht das, indem wir das Kreuzprodukt der Spannvektoren berechnen, wodurch wir direkt den Normalenvektor erhalten. Eine umständlichere Variante wäre, das Skalarprodukt der Spannvektoren mit dem Normalenvektor 0 zu setzen (aufgrund der Orthogonalität) und das lineare Gleichungssystem zu lösen.\\
+Nur wie kombinieren wir jetzt die Vektoren? Die Überlegung ist folgende: Wir ziehen von einem Punkt auf der Ebene den wir kennen (der Stützvektor \(\vec{a}\)), den Punkt den wir überprüfen wollen (\(\vec{x}\)) ab und bekommen so einen Vektor, von einem Punkt zum anderen. Liegt dieser auch auf der Ebene, so ist dieser rechtwinklig zum Normalenvektor (der ja zu jedem Vektor auf der Ebene orthogonal ist). Ist das nicht der Fall, liegt der Punkt irgendwie anders im Raum, aber nicht auf der Ebene. Das heißt, wenn wir den neu berechneten Vektor mit dem Normalenvektor skalar multiplizieren und der Punkt liegt auf der Ebene, so ist das Ergebnis 0:
+\[E:\ (\vec{a}-\vec{x})\cdot\vec{n}=0\]
+Wichtig hier zu erwähnen ist auch die hessesche Normalform. Diese unterscheidet sich lediglich durch den normierten Normalenvektor (dargestellt als \(\hat n\)). Normiert heißt hier, dass wir ihn durch die Länge teilen, er also nur noch die Länge 1 hat. Somit sieht die Hess'sche Normalenform um den Abstand d zu einem Punkt zu ermitteln, wie folgt aus:
+\[E:\ (\vec{a}-\vec{x})\cdot \frac{1}{|\vec{n}|}\vec{n}=(\vec{a}-\vec{x})\cdot \hat{n}=d\]
+
+\subsection{Koordinatenform}
+An der Koordinatenform gibt es nicht viel zu verstehen. Wir müssen nur lernen, sie aufzustellen. Letztendlich ist sie aber eine Umformung der Normalenform. Hierzu brauchen wir zuerst den Normalenvektor, welchen wir mit dem erst einmal unbekannten Vektor \(\vec{x}\) skalar multiplizieren\footnote{Einfacher gesagt, setzt einfach die entsprechende Zeile des Normalenvektors zu der entsprechenden x-Zeile ein, usw.}. Auf der rechten Seite der Gleichung steht dann die Zahl w, die raus kommt, wenn wir das Skalarprodukt einmal ausrechnen, indem wir den Stützvektor \(\vec{a}\) für \(\vec{x}\) einsetzen:
+\[n_1x_1+n_2x_2+n_3x_3=w \mathrm{\ (anders\ geschrieben\ } \vec{n}\cdot \vec{x}=w)\]
+Analog zur Hesseschen Normalform ist es auch möglich, die Koordinatenform anzugeben, indem man zuerst w abzieht und dann den gesamten Term durch die Länge des Normalenvektors teilt. So bekommt man den Abstand d der Ebene zum Punkt \(\vec{x}\):
+\[\frac{n_1x_1+n_2x_2+n_3x_3-w}{|\vec{n}|}=d\]

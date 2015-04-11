@@ -1,0 +1,71 @@
+\subsection{Kurvendiskussion}
+Sollt ihr eine Kurvendiskussion durchführen, so wäre folgende Reihenfolge sinnvoll\footnote{Die Reihenfolge bleibt im großen und ganzen euch überlassen. Es empfiehlt sich aber, sich an eine Reihenfolge zu halten, damit ihr nichts vergesst.}:\\
+1. Definitionsmenge\\
+2. Punkt- \& Achsensymetrie\\
+3. Verhalten für \(x \rightarrow \pm \infty\)\\
+4. Polstellen\\
+5. Schnittpunkte mit y-Achse und x-Achse\\
+6. Extrem- \& Sattelpunkte\\
+7. Wendepunkte\\
+8. Monotonie\\
+9. Zeichnen der Funktion\\ \\
+Wie man die Punkte abarbeitet, werden wir nun noch einmal einzeln durchgehen. Im Eigentlichen sind das aber lediglich die Anwendungen dessen, was wir bisher gelernt haben.
+\subsubsection{Definitionsmenge}
+Das wurde zwar schon angesprochen, wir wiederholen es aber an diesem Punkt noch einmal. Der Definitionsbereich umfasst jede Zahl, die ihr einsetzen dürft (meistens alle reellen Zahlen; es gibt jedoch drei Ausnahmen):\\
+\(\star\) Im Nenner eines \underline{Bruchs} darf niemals eine 0 stehen, hier wäre die Funktion an dieser Stelle nicht definiert. Kommen in einer Funktion Brüche vor, so ermittelt ihr einfach die Nullstellen des Nenners. Das sind dann die Zahlen die nicht eingesetzt werden dürfen. Dargestellt würde das so \(\mathbb D = x \in \mathbb R \backslash\{x_0,\ x_1, \ldots \}\).\\
+\(\star\) In \underline{geraden Wurzeln} (also die 2-te, 4-te, 8-te \ldots Wurzel) dürfen keine negativen Zahlen stehen, da der Wertebereich der Normalparabel lediglich im positiven definiert ist. Hierzu ist es hilfreich, sich wieder die Nullstellen zu suchen und Zahlen zwischen zwei Nullstellen einzusetzen, bzw. links oder rechts von ihnen. Jeder Bereich zwischen den Nullstellen des Terms in der Wurzel der negativ ist, fällt dann aus der Definitionsmenge raus.\\
+\(\star\) \underline{Logarithmusfunktionen} sind ähnlich zu behandeln wie die Wurzelfunktionen, nur dass hier auch die 'Nullstellen' im ln wegfallen.
+\subsubsection{Punkt- / Achsensymmetrie}
+Um eine Symetrie zu untersuchen, setzt ihr einfach für jedes x ein (-x) ein (bitte auch in Klammern!) und schaut, wie sich die Funktion im ganzen verändert.\\
+Eine (y-)Achsensymetrie erkennt man daran, dass wir die gleiche Funktion nach Einsetzen des (-x) wieder erhalten. Dies ist zum Beispiel bei ganzrationalen Funktionen, welche nur gerade Hochzahlen besitzen, der Fall. Auch der Kosinus ist Achsensymetrisch, wenn er nicht nach links oder rechts verschoben wurde.
+\[f(-x)=f(x),\mathrm{\ Bsp.\ } f(-x)=(-x)^2+1=x^2+1=f(x)\]
+Eine Punktsymetrie am Ursprung liegt vor, wenn wir beim Einsetzen von (-x) die selbe Funktion wieder erhalten, nur dass sie komplett mit -1 multipliziert wurde. Dies ist der Fall bei ganzrationalen Funktionen mit nur ungeraden Exponenten und dem Sinus zum Beispiel. So gilt:
+\[f(-x)=-f(x),\mathrm{\ Bsp.\ } f(-x)=(-x)^3+sin(-x)=-x^3-sin(x)=-(x^3+sin(x))\]
+\subsubsection{Verhalten gegen unendlich}
+Hierbei schaut man, woher die zu untersuchende Funktion kommt und wohin sie geht.\\
+\(\star\) Bei den trigonometrischen Funktionen kann man darauf keine Antwort geben, da diese ja andauernd hin und her Pendeln.\\
+\(\star\) Bei ganzrationalen Funktionen kann man jedoch Aussagen machen. Man schaut hierbei lediglich auf den Grad der Funktion (also den größten Exponenten). Dieser Summand entscheidet dann alleine über das Verhalten im Unendlichen. Alle Funktionen mit geraden Exponenten kommen vom positiven Unendlichen und gehen ins positiv Unendliche, sofern natürlich der Grad nicht mit etwas negativem multipliziert wird. Dann ist natürlich genau das Gegenteil der Fall.\\
+Bei einem ungeraden Grad kommt die Funktion vom minus Unendlichen und geht ins positiv Unendliche (wie \(x^3\)). Wenn der Summand, der den Grad angibt, negativ ist, dreht sich das ganze natürlich wieder um.\\
+\(\star\) \(\frac{1}{x}\) geht gegen 0 in beide Richtungen.\\
+\(\star\) Bei der e-Funktion geht die Funktion für \(x\rightarrow -\infty\) gegen 0, für \(x\rightarrow + \infty\) ins (positiv) Unendliche. Hier müsst ihr aber aufpassen, wenn die Funktion in der Art \(e^{-x}\) aussieht, dann vertauscht sich links und rechts entsprechend.\\
+\(\star\) Bei Summen, die man betrachtet, kann man einfach das \(\infty\) (in einer Nebenrechnung) einsetzen und das Ergebnis addieren. \(\infty\) addiert mit einer Zahl gibt trotzdem \(\infty\).\\
+\(\star\) Bei Produkten von Funktionen gibt es eine Art Rangfolge. \(e^x\) dominiert das Ergebnis immer, bei reinen ganzrationalen Funktionen dominiert der höchste Grad.
+
+%gebrochenrationale fliegen raus
+%\(\star\) Bei gebrochenrationalen Funktionen muss man zwischen 3 Arten unterscheiden. Selbige kann man als Bruch zwischen 2 ganzrationalen Funktionen darstellen (zur Erinnerung: \(h(x)=\frac{f(x)}{g(x)}\)). Nun unterscheidet man einfach, welcher Grad grÃ¶Ãer ist, der der oberen Funktion oder der der unteren.\\
+%Hat die obere Funktion den grÃ¶Ãeren Grad, so betrachtet man einfach diese, wie oben beschrieben und muss nichts weiter beachten.\\
+%Ist der Grad der Funktion im Nenner grÃ¶Ãer, so geht die Funktion immer gegen 0 (wie z. B. auch \(\frac{1}{x}\)).\\
+%Zu guter Letzt kann es natÃ¼rlich auch Vorkommen, dass beide Grade gleich groÃ sind. Dann klammert man nach dem Distributivgesetz das x mit der hÃ¶chsten Potenz aus, wodurch man das Verhalten gegen unendlich leicht ablesen kann. Leicht erkennt man das an folgendem Beispiel:
+%\[f(x)=\frac{2x^3+x}{3x^3+2}=\frac{x^3}{x^3}\cdot\frac{2+\frac{1}{x^2}}{3+\frac{2}{x^3}}\]
+%Letztendlich geht unsere Funktion also gegen \(\frac{2}{3}\) (das \(x^3\) kÃ¼rzt sich ja weg). Es fÃ¤llt letztendlich auf, dass immer die Zahlen vor den hÃ¶chsten Potenzen (hier das \(x^3\)) den Grenzwert anzeigen.
+
+\subsubsection{Polstellen}
+Polstellen treten bei Definitionslücken (zum Beispiel bei gebrochenrationalen Funktionen) auf. Hier ist anzugeben, ob f(x) an dieser Stelle gegen \(+\infty\ oder\ -\infty\) geht. Am einfachsten zu erkennen ist das indem man bei der Ableitung kurz vor und hinter der Polstelle (also entsprechendes x in der Nähe) einsetzt. Ist die Ableitung dort positiv, so gilt \(f(x)\rightarrow + \infty\) an dieser Stelle.
+\subsubsection{Schnittpunkte mit den Achsen}
+\(\star\) Zuerst ermittelt man den Schnittpunkt mit der y-Achse. Hierzu setzen wir f(0) und haben so den y-Achsenabschnitt. Das macht von daher Sinn, da sich an der Stelle x=0 die y-Achse befindet. Der Punkt ist dann S(0|f(0)).\\
+\(\star\) Den Schnittpunkt oder die Schnittpunkte mit der x-Achse nennt man auch Nullstellen, da wir an diesen Stellen (x-Werten) den Funktionswert 0 haben. Daher können wir mit Kommentar lediglich die x-Stellen angeben oder die Punkte. Wenn nicht anders verlangt, bleibt das euch überlassen\footnote{Achtet dann aber darauf, was ihr dazu schreibt! Wenn ihr von Nullstellen redet, dürft ihr keine Punkte angeben und umgekehrt. Je nach dem, wie streng eure Korrektoren sind, kann das als Fehler gewertet werden, vermeidet das also}. Um Nullstellen zu ermitteln gilt allgemein f(x)=0. Die Lösungen der Gleichung für x sind dann diese\footnote{Im Wahlteil habt ihr ja den CAS und könnt dann einfach mit solve(...) das ganze auflösen.}. Gehen wir nun das ermitteln der Nullstellen bei den verschiedenen Funktionstypen durch:\\
+\(\star\) Bei ganzrationalen Brüchen klammert man zuerst nach dem Distributivgesetz so viele x wie möglich aus (ohne das Brüche entstehen). Ist dies möglich, so hat die Funktion eine Nullstelle bei x=0, da der gesamte Term 0 wird, wenn einer der Faktoren (hier das alleinstehende x) 0 wird. Da bei euch die Polynomdivision entfällt, bleibt dann im Faktor eine quadratische oder sogar lineare Funktion. Wann diese 0 wird, ist einfach in einer neuen Gleichung zu ermitteln. Gebrochenrationale werden immer dann 0, wenn der Zähler 0 wird, wodurch es sich auf das Problem einer ganzrationalen Funktion reduziert. Ihr müsst dann lediglich darauf schauen, dass die Nullstelle im Definitionsbereich liegt.\\
+\(\star\) Bei trigonometrischen Funktionen ist das im allgemeinen nicht so einfach, im Pflichtteil werden im Normalfall aber nur 3 einfache Fälle vorkommen =). Sind sie nicht in y-Richtung verschoben, so müsst ihr lediglich eine angeben, in der Sinus oder Kosinus 0 ist und dann mit dem Term im Sinus / Kosinus damit gleichsetzen und bekommt so die Nullstelle:
+\[f(x)=sin(x+\frac{\pi}{2}),\mathrm{\ so\ sind\ Nullstellen:\ }x_0=\frac{\pi}{2}+k\cdot \frac{\pi}{2}\]
+Das \(k\cdot \frac{\pi}{2}\) zeigt an, dass sich jede viertel Periode eine weitere Nullstelle befindet (je nach Periode muss also der Faktor entsprechend verändert werden). Sollte die Funktion in y-Richtung um die Amplitude verschoben sein, so muss man entsprechend Hoch- / Tiefpunkt berechnen und angeben. Hier befindet sich um exakt eine Periode verschoben, eine neue Nullstelle. Sollte die Verschiebung größer als die Amplitude sein, so gibt es keine Nullstellen.
+\subsubsection{Extrem- / Sattelpunkte \& Wendepunkte}
+Wie man diese berechnet, haben wir ja bereits erläutert :)
+\subsubsection{Monotonie}
+Monotonie ist ein anderer wichtiger Teil für die Kurvendiskussion. Dazu schaut man sich einfach die erste Ableitung an. Alle Extrem- und Polstellen können wir dann als Grenzen für die Intervalle nehmen, die wir im folgenden betrachten. Ob die Intervalle monoton steigen oder fallen, bestimmt man dann, indem man eine beliebige Stelle im Intervall in die Ableitung einsetzt. Ist sie positiv, so ist die Funktion in jenem Intervall monoton steigend; ist sie negativ, dann monoton fallend. Ein Beispiel: bei der Funktion \(f(x)=x^2\) würde man entsprechend aufschreiben: Für \(-\infty \le x \le 0\) ist f(x) monoton fallend, für \(0\le x\le \infty\) monoton steigend.
+\subsubsection{Zeichnen der Funktion}
+Zu guter Letzt kann man die Punkte in das Schaubild eintragen und anhand der anderen Informationen der Kurvendiskussion den Graphen selbst recht genau bestimmen.
+
+\subsection{Funktionsscharen}
+Funktionsscharen bereiten oft Probleme. Jedoch sind sie nicht wesentlich komplizierter als die üblichen Funktionen, wenn man sich klar macht, wie sie aufgebaut sind. Man behandelt sie ganz einfach wie alle anderen Funktionen und behandelt den \textit{Parameter wie eine Zahl}. Denn eigentlich ist sie das auch, nur kennen wir jene Zahl nicht und ersetzen sie durch einen Buchstaben. So bekommen wir oftmals Punkte oder Stellen in Abhängigkeit der Parameter. \\
+Ein Beispiel: Wollen wir die Extremstelle der Funktion \(f_a(x)=x^2-ax+4\) bestimmen, so leiten wir zunächst nach der Variablen ab (\(f_a'(x)=2x-a \ \& \ f_a''(x)=2\)). Nun setzen wir die erste Ableitung 0 und erhalten so eine Extremstelle bei \(x_0=\frac{a}{2}\). Eingesetzt in die zweite Ableitung, erhalten wir immer eine positive Zahl. Also haben wir immer einen Tiefpunkt, unabhängig von a. Eingesetzt in die Ursprungsfunktion erhalten wir so für alle a den Tiefpunkt \(T(\frac{a}{2}|-\frac{a^2}{4}+4)\).\\
+Das einzige was hier als Neues hinzukommt ist, dass ein gemeinsamer Schnittpunkt für alle Funktionen der Funktionsschar gesucht werden soll (was aber nicht zwangsweise der Fall sein muss!). Hierzu setzt man für den Parameter 2 unterschiedliche 'Zahlen' ein (nicht zu wörtlich nehmen!), die wir nicht kennen und deshalb 2 verschiedene Buchstaben dafür nehmen.  Angenommen, wir haben \(f_a(x)=a^x\), dann setzen wir diese mit einer anderen Funktion der Schar gleich (\(f_a(x)=f_b(x)\)). Wie wir an folgender Rechnung sehen, wird, unabhängig vom Paramenter, jede Funktion durch den Punkt P(0|1) gehen. Wieso ist das so?
+\[a^x=b^x\ \Rightarrow\ e^{x\ ln(a)}=e^{x\ ln(b)} \ |ln\ \Rightarrow\ x\ ln(a)=x\ ln(b)\ \Rightarrow\ x\cdot (ln(a)-ln(b))=0\]
+Einem ähnlichem Schema folgen alle Aufgaben dieser Art.
+
+\subsection{Beschränktes Wachstum \& Differentialgleichung}
+Für ein beschränktes Wachstum wird die e-Funktion (\(f(x)=a\cdot e^{b(-x-c)}+d\)) benutzt. Unser b ist dann negativ, sodass der Wert der Funktion immer kleiner wird und sich einem Wert annähert und zwar unserer Verschiebung in y-Richtung d (Schranke genannt). Nun ist zu prüfen, ob wir uns der Grenze von oben (beschränkte Schrumpfung) oder von unten (beschränktes Wachstum) nähern. Bei letzterem müssen wir ein entsprechendes negatives a einsetzen. Am Besten könnt ihr das mit einer Skizze herleiten.\\
+Schauen wir uns noch kurz an, was Differentialgleichungen sind. In einer solchen Gleichung sind sowohl die eigentliche Funktion als auch deren Ableitung vorhanden (meist ohne diese selbst zu kennen). Diese aufzulösen ist nicht so leicht. Da ihr diese aber nur beim Thema beschränktes Wachstum benutzt, lässt sich das Ganze auf eine einfache Art reduzieren. Findet ihr eine Differentialgleichung vor, die (zumindest durch umformen) wie folgt aussieht
+\[f'(x)=k\cdot (S-f(x)),\]
+so sind Funktion und Ableitung:
+\[f(x)=S+a\cdot e^{-kx},\ f'(x)=-ake^{-kx}\]
+Ihr könnt also entsprechend die Variablen einsetzen, um eure Funktion zu finden. Um zu schauen, ob die Differentialgleichung stimmt, setzt einfach die Funktionen und Ableitung entsprechend oben ein.

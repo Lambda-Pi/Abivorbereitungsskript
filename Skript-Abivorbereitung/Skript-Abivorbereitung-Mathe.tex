@@ -1,0 +1,43 @@
+\documentclass[a4paper,11pt]{scrreprt}
+
+\usepackage[ngerman]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage[tracking=true]{microtype}
+\usepackage{lmodern}
+\usepackage{hyperref}
+
+\title{Skript zum Mathe - Abi-Vorbereitungskurs~2015\\
+\includegraphics[scale=0.15]{Images/Logo.jpg}
+\author{Jan, Lucas \& Patrick\\
+www.lambda-pi.de}
+\date{\today}}
+
+\usepackage{amsmath}
+\begin{document}
+	% Titelseite einfügen
+	\maketitle
+	\newpage
+	
+	% Inhaltsverzeichnis einfügen
+	\tableofcontents
+	\newpage
+	
+	% Vorwort 
+	\input{Chapters/Vorwort.tex}
+	
+	% Wiederholungen und Vorgeplänkel
+	\input{Chapters/Wiederholungen/_Wiederholungen}
+	
+	% Analysis
+	\input{Chapters/Analysis/_Analysis.tex}
+	
+	% Analytische Geometrie (Vektoren)
+	\input{Chapters/Geometrie/_Geometrie.tex}
+	
+	% Stochastik
+	\input{Chapters/Stochastik/_Stochastik.tex}
+	
+\end{document}

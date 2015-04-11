@@ -1,0 +1,6 @@
+\section{mindestens / höchstens}
+In einigen Aufgaben wird danach gefragt, wie hoch die Wahrscheinlichkeit ist, dass bei n mal ziehen mindestens / höchstens k mal das Ereignis eintrifft. Sollen Beispielsweise höchstens 5 Bauteile von 50 defekt sein, so müssen wir alle Pfade, in denen 1, 2, 3, 4 und 5 Bauteile defekt sind, berechnen und addieren. Bei mindestens folgt das selbe analog, nur eben dass alle mit 5 oder höher, addiert werden. So berechnet sich das Ganze wie folgt:
+\[\mathrm{\underline{Höchstens}: }P(X\leq k)=P(X=0)+P(X=1)+\ldots +P(X=k)\]
+\[\mathrm{\underline{Mindestens}: }P(X\geq k)=P(X=k)+P(X=k+1)+\ldots +P(X=n)\]
+Ist die Wahrscheinlichkeit für 'weniger als' oder 'mehr als' gefragt, so schreibt man dies als \(P(X<k)\mathrm{\ bzw.\ }P(X>k)\)\footnote{Beachtet bei der Taschenrechner Eingabe, dass dort immer $P(X\leq k)$ oder $P(X\geq k)$ gefragt ist!}.\\
+Ihr könnt euch auch oft viel Arbeit ersparen, wenn ihr auch hier die Formel \(P(A)=1-P(\overline{A})\) beachtet. Denn sollte in unserem vorherigen Beispiel die Wahrscheinlichkeit berechnet werden, dass mindestens 45 Bauteile funktionieren sollen, so ist dies das gleiche, wie wenn man die Wahrscheinlichkeit für höchstens 4 Bauteile berechnet und diese von 100\% abzieht (denn das ist die Gegenwahrscheinlichkeit dazu).

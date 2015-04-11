@@ -1,0 +1,23 @@
+\section{Mehrmaliges Ziehen}
+
+\subsection{Pfade}
+Zieht man nun häufiger, so ist das Bestimmen der Wahrscheinlichkeit nicht auf den ersten Blick sichtbar. Um sich die Arbeit zu vereinfachen, zeichnet man ein Pfad-Diagramm. So beginnt man von einem Punkt und zeichnet dann davon so viele Linien, wie es mögliche Ereignisse gibt (an deren Ende kennzeichnet man, um welches es sich handelt; zur Übersichtlichkeit alle Ereignisse untereinander). Auf oder neben die Linien kommt dann die Wahrscheinlichkeit für die jeweiligen Ereignisse. Nun wird an jedem Ereignis das Gleiche wiederholt. Oft wird ein Pfad-Diagramm, wegen seines Aussehens, auch als 'Baum'-Diagramm und dessen Pfade als 'Äste' bezeichnet\\
+Liegt ein System mit Zurücklegen vor, so bleibt die Wahrscheinlichkeit für die Ereignisse immer gleich (wie beim Würfeln). Ohne Zurücklegen wird das schwieriger. Haben wir 5 Kugeln, 2 weiße und 3 schwarze, so ist die Wahrscheinlichkeit eine Schwarze zu ziehen \(\frac{3}{5}\). Legen wir diese nicht zurück, so ist beim nächsten Schritt eine schwarze Kugel weniger, die man ziehen kann, also auch insgesamt eine weniger. Somit ist dann die Wahrscheinlichkeit \(\frac{2}{4}=\frac{1}{2}\).\\
+Man muss im Übrigen nicht alle möglichen Pfade aufzeichnen. Beobachtet man, wie hoch die Wahrscheinlichkeit ist, dass man nur schwarze Kugeln zieht, so ist es nicht nötig, einen Pfad mit einer weißen Kugel weiter zu führen.
+
+\subsection{Ereignisse bei mehrmaligem Ziehen}
+Beim mehrmaligen Ziehen besteht ein 'Mini-Ereignis' aus mehreren Ereignissen hintereinander, immer pro Zug einem. So ist ein Element (ein Gesamtereignis) aus mehreren Objekten zusammengesetzt. Also ist bei zweimaligem Münzwurf (1 für Kopf, 0 für Zahl) das Ereignis, dass einmal Kopf und einmal Zahl (ungeordnet) geworfen wird:
+\[A=\lbrace (Zahl;Kopf),\ (Kopf;Zahl)\rbrace\]
+
+\subsection{Pfadregeln}
+\(\star\) Nun haben wir mehrere Pfade, die uns zur Verfügung stehen. Zunächst legen wir ein Augenmerk darauf, wie hoch die Wahrscheinlichkeit für \underline{einen} gesamten Pfad ist. Nehmen wir an, wir ziehen 2 mal und die Wahrscheinlichkeit für beide Ereignisse, die pro Ziehen stattfinden können, beträgt \(\frac{1}{2}\). Für die Wahrscheinlichkeit eines Pfades (zum Beispiel man würfelt 2-mal hintereinander eine gerade Zahl) gilt dann:
+\[P(A)=P(A_1) \cdot P(A_2) \cdot \ldots\]
+\(A_1\) ist das erste Mal 'iehen', \(A_2\) das zweite Mal, usw.. In unserem Beispiel wäre dann die Wahrscheinlichkeit für einen Pfad mit dem Ereignis A: \(P(A)=\frac{1}{2} \cdot \frac{1}{2}=\frac{1}{4}=25\%\). Da alle Pfade gleich wahrscheinlich sind, wir 4 Pfade haben und eines der Ereignisse immer eintreten muss, ist das Ergebnis auch schlüssig.\\
+\(\star\) Nun kann es vorkommen (vor allem bei ungeordneten Systemen!), dass mehrere Pfade zum Erfolg führen. Wollen wir zum Beispiel wissen, wie hoch die Wahrscheinlichkeit ist, dass wir nur gerade oder nur ungerade Zahlen Würfeln, so liegen zwei mögliche Ereignisse vor. Die Wahrscheinlichkeit, dass das Ereignis (der Pfad) A oder B vorliegt, ist dann:
+\[P(A\cup B)=P(A)+P(B)\]
+In unserem Fall also \(P(C)=\frac{1}{4}+\frac{1}{4}=\frac{1}{2}=50\%\). Da alle Pfade gleichwertig sind und 2 von 4 auf das Ereignis zutreffen, ist auch das ersichtlich.
+
+\subsection{Reduktion von möglichen Ereignissen}
+Um sich Arbeit zu sparen, lohnt es sich, Ereignisse zusammenzufassen. So will man in den meisten Fällen wissen, ob ein Ergebnis eintritt oder nicht. 
+Nehmen wir wieder das Beispiel mit dem Würfel. So wäre das Eintreten des Ereignisses A hier, dass wir eine gerade Zahl würfeln. Das Gegenereignis \(\overline{A}\) ist dann das Würfeln einer ungeraden Zahl (wäre aber - auch umgekehrt - genau so richtig). Anstatt hier also sechs einzelne Ereignisse zu haben, können wir das auf zwei Ereignisse reduzieren (jeweils pro Ziehen).\\
+Das ganze nennt sich auch \textbf{Bernoulli-Versuch}, welcher in den meisten der Aufgaben realisierbar ist.
