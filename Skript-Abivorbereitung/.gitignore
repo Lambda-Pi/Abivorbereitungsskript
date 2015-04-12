@@ -100,3 +100,4 @@ sympy-plots-for-*.tex/
 # WinEdt
 *.bak
 *.sav
+/tmp/

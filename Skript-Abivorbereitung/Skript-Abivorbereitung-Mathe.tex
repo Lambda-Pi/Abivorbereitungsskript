@@ -7,7 +7,11 @@
 \usepackage{amsmath,amssymb,amsthm}
 \usepackage[tracking=true]{microtype}
 \usepackage{lmodern}
+\usepackage{color}
 \usepackage{hyperref}
+
+% ToDo Notes einbinden
+\input{Defines/ToDos.tex}
 
 \title{Skript zum Mathe - Abi-Vorbereitungskurs~2015\\
 \includegraphics[scale=0.15]{Images/Logo.jpg}
@@ -17,14 +21,17 @@ www.lambda-pi.de}
 
 \usepackage{amsmath}
 \begin{document}
+	% Liste der ToDo's erzeugen
+	\listoftodos
 	% Titelseite einfügen
 	\maketitle
 	\newpage
 	
-	% Inhaltsverzeichnis einf�gen
+	% Inhaltsverzeichnis einf�gen
 	\tableofcontents
 	\newpage
 	
+	\todo[red]{In allen Teilen ToDo's für die Umstrukturierung einfügen}
 	% Vorwort 
 	\input{Chapters/Vorwort.tex}
 	
