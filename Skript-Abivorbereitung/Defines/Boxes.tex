@@ -1,0 +1,39 @@
+% Farben definieren (Nicht gebrauchtes auskommentieren):
+% Online-Version
+\colorlet{BoxBackground}{LimeGreen!100!}
+\colorlet{BoxBorderframe}{Black!100!}
+
+% Druckversion
+%\colorlet{BoxBackground}{Gray!70!}
+%\colorlet{BoxBorderframe}{Black!100!}
+
+
+% Boxen definieren
+% Formel Boxen
+\newcommand{\formel}[1]{
+	\fcolorbox{BoxBorderframe}{BoxBackground}{%
+		\parbox{0.87\linewidth}{%
+			#1
+		}
+	}
+}
+
+% Zusammenfassung
+\newcommand{\summary}[1]{
+	\fcolorbox{BoxBorderframe}{BoxBackground}{%
+		\parbox{\linewidth}{%
+			\large{\textbf{Zusammenfassung:}}\\
+			#1
+		}
+	}
+}
+
+% Signalwörter
+\newcommand{\tags}[1]{
+	\fcolorbox{BoxBorderframe}{BoxBackground}{%
+		\parbox{\linewidth}{%
+			\large{\textbf{Signalwörter:}}\\
+			#1
+		}
+	}
+}
