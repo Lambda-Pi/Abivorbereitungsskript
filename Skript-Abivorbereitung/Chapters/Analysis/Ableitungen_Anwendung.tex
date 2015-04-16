@@ -1,30 +1,101 @@
 \subsection{Anwendung von Ableitungen}
-\todo[color=red]{Kasten für Formel hinzufügen}
-\todo[color=red]{Zusammenfassung-Kasten hinzufügen}
-\todo[color=red]{Signalwörter-Kasten hinzufügen}
-Ableitungen sind letztendlich ein Instrument, mit dem wir Eigenschaften von Funktionen überprüfen können oder mit denen wir Eigenschaften beschreiben und in die Mathematik übersetzen können.\\
-\(\star\) Ein Beispiel ist die Änderungsrate. Die erste Ableitung spiegelt immer eine Änderungsrate der Funktion wieder, gibt also an, um wie viel sich die Funktion an einer bestimmten Stelle verändert. 
-Machen wir uns das mal an einem Beispiel der Physik klar. Haben wir zum Beispiel den Ort eines Gegenstands in Abhängigkeit von der Zeit gegeben (s(t)=\ldots) und wir wollen wissen, wie sich der Ort mit der Zeit verändert, so leitet man nach der Zeit ab. Somit haben wir die Geschwindigkeit \(\frac{\Delta s}{\Delta t}\)(wobei \(\Delta\) gegen 0 geht), was eben angibt, um welche Strecke sich unser Gegenstand in einer Sekunde bewegt hat (erkennbar auch an den Einheiten ;) ). Genau so verhält sich das mit "Liter pro Zeit"\ oder allem anderen, was einen Bruch als Einheit besitzt.\\
-\(\star\) Ableitungen können auch verwendet werden, um geometrische Informationen in die Sprache der Mathematik umzuwandeln. Folgendes Beispiel habt ihr vielleicht schon durchgerechnet. Man hat eine Funktion gegeben, die den Querschnitt eines Tals zwischen zwei Bergen beschreibt. Jetzt wissen wir an welchen Punkt die Sonne anfängt und der Schatten aufhört (natürlich ein Punkt auf der Funktion, also dem Querschnitt) und wir wollen wissen, in welchem Winkel die Sonne gerade zur x-Achse steht. Was wir jetzt noch (durch Überlegungen) wissen sollten ist, dass die Sonne den Berg tangential streift. Also brauchen wir die Tangente (an einer noch unbekannten Stelle). Die Steigung an der Stelle kann man dann noch als Winkel umrechnen (dazu kommen wir später noch). Wie man das ganze konkret berechnet, gehen wir im Kurs selbst durch.\\
-\(\star\) Eine weitere wichtige Möglichkeit zur Anwendung von Ableitungen ist die Berechnung von Extrem- \& Wendepunkten.
-\subsubsection{Extrempunkte}
-\todo[color=red]{Kasten für Formel hinzufügen}
-\todo[color=red]{Zusammenfassung-Kasten hinzufügen}
-\todo[color=red]{Signalwörter-Kasten hinzufügen}
-Um diese zu bestimmen,  brauchen wir die ersten beiden Ableitungen. Zuerst bestimmt man die Nullstellen der ersten Ableitung, denn an Extrempunkten haben Funktionen immer die Steigung 0. Somit haben wir schon mal Stellen, an denen Extrempunkte sein \textbf{können}. Die Stellen (x-Werte) setzen wir dann in die zweite Ableitung ein, um zu schauen, ob es sich um einen Hoch- oder Tiefpunkt handelt. Haben wir in der zweiten Ableitung einen positiven Wert, so liegt ein Tiefpunkt vor. Bei einem negativem Wert haben wir einen Hochpunkt der ursprünglichen Funktion. Als Eselsbrücke kann man Smilies nehmen. Haben wir einen positiven Wert, so malen wir einen glücklichen Smilie, dessen Mund einen Tiefpunkt bildet. Bei einem negativen Wert malen wir einen traurigen Smilie, dessen Mund einen Hochpunkt besitzt. Weiter muss man den Punkt berechnen, an dem der Extremwert ist. Die Stelle \(x_0\) kennen wir ja bereits und müssen diese nun in die eigentliche Funktion f(x) einsetzen. Somit bekommen wir den Extrempunkt \(P(x_0|f(x_0))\).\\
-Ein Problem ist es, wenn die zweite Ableitung 0 ergibt. Dann setzt man einfach in die erste Ableitung ein x kleiner als die Stelle ein und ein x, ein bisschen größer als diese Stelle, um die Steigung links und rechts von dem Extrempunkt zu ermitteln. \\
-Ist die Steigung erst positiv, dann negativ, so haben wir einen Hochpunkt, umgekehrt einen Tiefpunkt. Sind beide Seiten positiv oder beide negativ, so haben wir einen Sattelpunkt. Diese Variante ist mit Nachdenken verbunden und man muss verstanden haben, wieso das so ist.\\
-Noch ein kurzes Beispiel zu Extrempunktberechnungen im allgemeinen: Untersuchen wir die Funktion \(f(x)=\frac{1}{4}x^4+x^2\) auf Extremstellen. Die ersten zwei Ableitungen sind \(f'(x)=x^3+2x,\ f''(x)=3x^2+2\). Eine der potentiellen Extremstellen ist 0 (denn f'(0)=0). Eingesetzt in die zweite Ableitung ergibt f''(0)=2>0, also haben wir einen Tiefpunkt vorliegen.
-\subsubsection{Wendepunkte}
-\todo[color=red]{Kasten für Formel hinzufügen}
-\todo[color=red]{Zusammenfassung-Kasten hinzufügen}
-\todo[color=red]{Signalwörter-Kasten hinzufügen}
-Wendestellen / -punkte berechnet man ganz ähnlich wie Extrempunkte. Allerdings berechnen wir hier die Extrempunkte der ersten Ableitung. Die Nullstelle der zweiten Ableitung, eingesetzt in die dritte Ableitung, gibt uns die Richtungsänderung. Ändert sich die Kurve der Funktion von links nach rechts, haben wir bei der dritten Ableitung einen negativen Wert (\(f'''(x_w)<0)\), also der Hochpunkt der ersten Ableitung) und umgekehrt.
-\subsubsection{Winkel zwischen Funktionen und Achsen}
-\todo[color=red]{Kasten für Formel hinzufügen}
-\todo[color=red]{Zusammenfassung-Kasten hinzufügen}
-\todo[color=red]{Signalwörter-Kasten hinzufügen}
-\(\star\) Um den Winkel zwischen einer Funktion und der x-Achse zu berechnen, brauchen wir zunächst die erste Ableitung, um so die Steigung an der entsprechenden Stelle zu bekommen. Mit einer Skizze kann man sich nun herleiten, wie man den Winkel berechnet. Zeichnen wir eine Gerade mit entsprechender Steigung inklusive Steigungsdreieck (wobei wir 1 nach rechts und \(f'(x_0)\) nach oben, bzw. unten gehen), so haben wir ein rechtwinkliges Dreieck mit bekannten Katheten und können mit dem Tangens entsprechend den Winkel berechnen:
-\[\alpha = tan^{-1}(f'(x_0))\]
-\(\star\) Den Winkel zwischen zwei Funktionen an einer Stelle (im Normalfall der Schnittpunkt der Funktionen) berechnet man, indem zuerst wie oben beschrieben, die Winkel der Funktionen mit der x-Achse berechnet werden (aber natürlich an der entsprechenden Stelle \(x_0\)). Die beiden Winkel werden dann voneinander abgezogen, um den Schnittwinkel zu bekommen.\\
-Beachtet auch, dass es immer zwei Schnittwinkel gibt, zumeist einen größeren und einen kleineren und immer ist  der kleinere der Gesuchte ! Ist euer berechneter Winkel größer als \(90^\circ\), so zieht ihr diesen einfach von \(180^\circ\) ab.
+	\todo[color=red]{Kasten für Formel hinzufügen}
+	\todo[color=red]{Zusammenfassung-Kasten hinzufügen}
+	\todo[color=red]{Signalwörter-Kasten hinzufügen}
+	Ableitungen sind letztendlich ein Instrument, mit dem wir Eigenschaften von
+	Funktionen überprüfen können oder mit denen wir Eigenschaften beschreiben und
+	in die Mathematik übersetzen können.\\
+	
+	\(\star\) Ein Beispiel ist die Änderungsrate. Die erste Ableitung spiegelt
+	immer eine Änderungsrate der Funktion wieder, gibt also an, um wie viel sich
+	die Funktion an einer bestimmten Stelle verändert.
+	Machen wir uns das mal an einem Beispiel der Physik klar. Haben wir zum
+	Beispiel den Ort eines Gegenstands in Abhängigkeit von der Zeit gegeben
+	(s(t)=\ldots) und wir wollen wissen, wie sich der Ort mit der Zeit verändert,
+	so leitet man nach der Zeit ab. Somit haben wir die Geschwindigkeit
+	\(\frac{\Delta s}{\Delta t}\)(wobei \(\Delta\) gegen 0 geht), was eben angibt,
+	um welche Strecke sich unser Gegenstand in einer Sekunde bewegt hat (erkennbar
+	auch an den Einheiten ;) ). Genau so verhält sich das mit "Liter pro Zeit"\
+	oder allem anderen, was einen Bruch als Einheit besitzt.\\
+
+	\(\star\) Ableitungen können auch verwendet werden, um geometrische
+	Informationen in die Sprache der Mathematik umzuwandeln. Folgendes Beispiel
+	habt ihr vielleicht schon durchgerechnet. Man hat eine Funktion gegeben, die
+	den Querschnitt eines Tals zwischen zwei Bergen beschreibt. Jetzt wissen wir an
+	welchen Punkt die Sonne anfängt und der Schatten aufhört (natürlich ein Punkt
+	auf der Funktion, also dem Querschnitt) und wir wollen wissen, in welchem
+	Winkel die Sonne gerade zur x-Achse steht. Was wir jetzt noch (durch
+	Überlegungen) wissen sollten ist, dass die Sonne den Berg tangential streift.
+	Also brauchen wir die Tangente (an einer noch unbekannten Stelle). Die Steigung
+	an der Stelle kann man dann noch als Winkel umrechnen (dazu kommen wir später
+	noch). Wie man das ganze konkret berechnet, gehen wir im Kurs selbst durch.\\
+
+	\(\star\) Eine weitere wichtige Möglichkeit zur Anwendung von Ableitungen ist
+	die Berechnung von Extrem- \& Wendepunkten.
+
+	\subsubsection{Extrempunkte}
+		\todo[color=red]{Kasten für Formel hinzufügen}
+		\todo[color=red]{Zusammenfassung-Kasten hinzufügen}
+		\todo[color=red]{Signalwörter-Kasten hinzufügen}
+		Um diese zu bestimmen,  brauchen wir die ersten beiden Ableitungen. Zuerst
+		bestimmt man die Nullstellen der ersten Ableitung, denn an Extrempunkten haben
+		Funktionen immer die Steigung 0. Somit haben wir schon mal Stellen, an denen
+		Extrempunkte sein \textbf{können}. Die Stellen (x-Werte) setzen wir dann in
+		die zweite Ableitung ein, um zu schauen, ob es sich um einen Hoch- oder
+		Tiefpunkt handelt. Haben wir in der zweiten Ableitung einen positiven Wert, so
+		liegt ein Tiefpunkt vor. Bei einem negativem Wert haben wir einen Hochpunkt
+		der ursprünglichen Funktion. Als Eselsbrücke kann man Smilies nehmen. Haben
+		wir einen positiven Wert, so malen wir einen glücklichen Smilie, dessen Mund
+		einen Tiefpunkt bildet. Bei einem negativen Wert malen wir einen traurigen
+		Smilie, dessen Mund einen Hochpunkt besitzt. Weiter muss man den Punkt
+		berechnen, an dem der Extremwert ist. Die Stelle \(x_0\) kennen wir ja bereits
+		und müssen diese nun in die eigentliche Funktion f(x) einsetzen. Somit
+		bekommen wir den Extrempunkt \(P(x_0|f(x_0))\).\\
+		Ein Problem ist es, wenn die zweite Ableitung 0 ergibt. Dann setzt man einfach
+		in die erste Ableitung ein x kleiner als die Stelle ein und ein x, ein
+		bisschen größer als diese Stelle, um die Steigung links und rechts von dem
+		Extrempunkt zu ermitteln. \\
+		Ist die Steigung erst positiv, dann negativ, so haben wir einen Hochpunkt,
+		umgekehrt einen Tiefpunkt. Sind beide Seiten positiv oder beide negativ, so
+		haben wir einen Sattelpunkt. Diese Variante ist mit Nachdenken verbunden und
+		man muss verstanden haben, wieso das so ist.\\
+		Noch ein kurzes Beispiel zu Extrempunktberechnungen im allgemeinen:
+		Untersuchen wir die Funktion \(f(x)=\frac{1}{4}x^4+x^2\) auf Extremstellen.
+		Die ersten zwei Ableitungen sind \(f'(x)=x^3+2x,\ f''(x)=3x^2+2\). Eine der
+		potentiellen Extremstellen ist 0 (denn f'(0)=0). Eingesetzt in die zweite
+		Ableitung ergibt f''(0)=2>0, also haben wir einen Tiefpunkt vorliegen.
+
+	\subsubsection{Wendepunkte}
+		\todo[color=red]{Kasten für Formel hinzufügen}
+		\todo[color=red]{Zusammenfassung-Kasten hinzufügen}
+		\todo[color=red]{Signalwörter-Kasten hinzufügen}
+		Wendestellen / -punkte berechnet man ganz ähnlich wie Extrempunkte. Allerdings
+		berechnen wir hier die Extrempunkte der ersten Ableitung. Die Nullstelle der
+		zweiten Ableitung, eingesetzt in die dritte Ableitung, gibt uns die
+		Richtungsänderung. Ändert sich die Kurve der Funktion von links nach rechts,
+		haben wir bei der dritten Ableitung einen negativen Wert (\(f'''(x_w)<0)\),
+		also der Hochpunkt der ersten Ableitung) und umgekehrt.
+	
+	\subsubsection{Winkel zwischen Funktionen und Achsen}
+		\todo[color=red]{Kasten für Formel hinzufügen}
+		\todo[color=red]{Zusammenfassung-Kasten hinzufügen}
+		\todo[color=red]{Signalwörter-Kasten hinzufügen}
+		\(\star\) Um den Winkel zwischen einer Funktion und der x-Achse zu berechnen,
+		brauchen wir zunächst die erste Ableitung, um so die Steigung an der
+		entsprechenden Stelle zu bekommen. Mit einer Skizze kann man sich nun
+		herleiten, wie man den Winkel berechnet. Zeichnen wir eine Gerade mit
+		entsprechender Steigung inklusive Steigungsdreieck (wobei wir 1 nach rechts
+		und \(f'(x_0)\) nach oben, bzw. unten gehen), so haben wir ein rechtwinkliges
+		Dreieck mit bekannten Katheten und können mit dem Tangens entsprechend den
+		Winkel berechnen:
+		\[\alpha = tan^{-1}(f'(x_0))\]
+
+		\(\star\) Den Winkel zwischen zwei Funktionen an einer Stelle (im Normalfall
+		der Schnittpunkt der Funktionen) berechnet man, indem zuerst wie oben
+		beschrieben, die Winkel der Funktionen mit der x-Achse berechnet werden (aber
+		natürlich an der entsprechenden Stelle \(x_0\)). Die beiden Winkel werden dann
+		voneinander abgezogen, um den Schnittwinkel zu bekommen.\\
+		Beachtet auch, dass es immer zwei Schnittwinkel gibt, zumeist einen größeren
+		und einen kleineren und immer ist  der kleinere der Gesuchte ! Ist euer
+		berechneter Winkel größer als \(90^\circ\), so zieht ihr diesen einfach von
+		\(180^\circ\) ab.

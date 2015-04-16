@@ -1,68 +1,114 @@
 \section{Gaußverfahren für LGS}
-\todo[color=red]{Kasten für Formel hinzufügen}
-\todo[color=red]{Zusammenfassung-Kasten hinzufügen}
-\todo[color=red]{Signalwörter-Kasten hinzufügen}
-Aus der Mittelstufe wissen wir, wie wir ein LGS mit 2 Variablen auflösen können. Wichtig für das Gaußverfahren ist das Additionsverfahren, welches dabei benutzt wird. Das Gaußverfahren hat den Vorteil, das jedes LGS mit beliebig vielen Variablen gelöst werden kann. Meistens brauchen wir nur 3 Variablen oder Gleichungen. Hierzu verwenden wir die Matrix, welche einfach eine andere Schreibweise der bekannten Form darstellt. So wird aus
-\[(I)\ x_1+2x_2+3x_3=2,\ (II)\ x_1+x_2+x_3=2,\ (III)\ 3x_1+3x_2+x_3=0\]
-\[
-\left(
- \begin{matrix}
-  1 & 2 & 3\\
-  1 & 1 & 1\\
-  3 & 3 & 1
- \end{matrix}
- \left|
-  \begin{matrix}
-   2\\
-   2\\
-   0
-  \end{matrix}
- \right)
-\right.
-\]
-Die Schreibweise hat aber keinerlei Auswirkungen auf die Lösung. Wir möchten nun den Gaußschen Algorithmus dafür aufschreiben:\\
-\textbf{1. Schritt:} Zunächst schreibt man die erweiterte Matrix auf (erweitert wegen dem
-Strich) oder ihr schreibt die Gleichungen einfach wie bekannt untereinander. Beachtet bitte, dass alle \(x_1,\ x_2,\ x_3\) jeweils untereinander stehen, auf der linken Seite der Gleichung nur Summanden mit x stehen und auf der rechten Seite nur die Zahlen! Am besten benennt ihr die Zeilen mit römischen Ziffern, um die Rechnung übersichtlich zu halten.\\
-\textbf{2. Schritt:} Wenn möglich, verschiebe die Zeilen so, dass nur in den unteren Zeilen eine 0 in der ersten Spalte steht (hier würde dann das \(x_1\) in der Gleichung fehlen). Dies ist in unserem Beispiel nicht der Fall, also gehen wir über zum\\
-\textbf{3. Schritt:} Ziehe (oder addiere) je nach Zeile das Vielfache von der ersten Zeile zum Vielfachen der anderen Zeilen so ab, dass an entsprechender Stelle eine 0 steht. Die erste Zeile bleibt aber stehen! So würden wir in der 2. Zeile
-| (I)-(II) haben, und in der 3. Zeile | 3(I)-(III). Daraus Folgt:
-\[
-\left(
- \begin{matrix}
-  1 & 2 & 3\\
-  0 & 1 & 2\\
-  0 & 3 & 8
- \end{matrix}
- \left|
-  \begin{matrix}
-   2\\
-   0\\
-   6
-  \end{matrix}
- \right)
-\right.
-\]
-\textbf{4. Schritt:} Wiederhole Schritt 2 \& 3 so oft, bis in der letzten Zeile lediglich eine Zahl auf der linken Seite übrig bleibt (nur zieht man danach von der 2. Zeile ab und lässt diese stehen, usw.). Dann erhalten wir (Rechenschritte: 3. Zeile wird berechnet durch 3(II)-(III)):
-\[
-\left(
- \begin{matrix}
-  1 & 2 & 3\\
-  0 & 1 & 2\\
-  0 & 0 & -2
- \end{matrix}
- \left|
-  \begin{matrix}
-   2\\
-   0\\
-   -6
-  \end{matrix}
- \right)
-\right.
-\]
-\textbf{5. Schritt:} Hat man die Stufenform, gibt es 2 Möglichkeiten. Die Erste ist, wir rechnen die unterste Variable einfach aus und setzen sie in die 2. Zeile ein. So erhalten wir die 2. Variable. Zu guter Letzt setzen wir die 2 bekannten Variablen oben ein und erhalten die Letzte. In der ursprünglichen Schreibweise ist das ein wenig ersichtlicher wie in der Matrix, geht jedoch genau so.\\
-Die zweite Möglichkeit ist ein wenig abstrakter, weshalb wir sie hier auch nicht aufschreiben wollen, um Verwirrungen zu vermeiden. Bei Interesse werden wir sie aber gerne im Kurs zeigen (sie ist allerdings nicht schwerer).\\
-\textbf{6. Schritt:} Schreibe die Lösungsmenge auf, in diesem Fall wäre sie \(x_1 = 5,\ x_2 =-6,\ x_3 = 3\). \\ \\
-Nun gibt es drei Möglichkeiten, wie euer Ergebnis aussehen kann. Die erste wäre, dass wir \underline{eine} Lösung haben, wie im oberen Beispiel. Wir haben also für jede Variable nur eine einzige Lösung, damit alle Gleichungen stimmen.\\
-Eine andere Möglichkeit ist, dass wir keine Lösung bekommen. Das heißt, wir bekommen schon bei zwei Gleichungen eine Lösung (meist wenn man weniger Variablen hat wie Gleichungen) und diese passt dann aber nicht in die dritte. Somit haben wir keine Lösung, die für alle Gleichungen gilt.\\
-Und zu guter Letzt kann es auch vorkommen, dass es unendlich viele Lösungen gibt. Dann steht zum Beispiel in der letzten Zeile nichts und in der zweiten \(3x_2 + x_3 = 0 => x_2 = - \frac{x_3}{2}\) . So können wir \(x_2\) nur in Abhängigkeit von \(x_3\) angeben (welches wir am besten noch umbenennen, zum Beispiel in \(t := x_3\) ). Somit haben wir eine Möglichkeit für die Lösung für jedes t, das wir einsetzen.\\
-Keine Angst, wenn ihr das hier nicht so recht verstanden habt. Es ist schwerer zu lesen (und aufzuschreiben), als wenn es vorgetragen und mit Fragen \& Antworten erklärt wird ;).
+	\todo[color=red]{Kasten für Formel hinzufügen}
+	\todo[color=red]{Zusammenfassung-Kasten hinzufügen}
+	\todo[color=red]{Signalwörter-Kasten hinzufügen}
+	Aus der Mittelstufe wissen wir, wie wir ein LGS mit 2 Variablen auflösen
+	können. Wichtig für das Gaußverfahren ist das Additionsverfahren, welches dabei
+	benutzt wird. Das Gaußverfahren hat den Vorteil, das jedes LGS mit beliebig
+	vielen Variablen gelöst werden kann. Meistens brauchen wir nur 3 Variablen oder
+	Gleichungen. Hierzu verwenden wir die Matrix, welche einfach eine andere
+	Schreibweise der bekannten Form darstellt. So wird aus 
+	\[(I)\ x_1+2x_2+3x_3=2,\
+	(II)\ x_1+x_2+x_3=2,\ (III)\ 3x_1+3x_2+x_3=0\]
+	\[
+	\left(
+	 \begin{matrix}
+	  1 & 2 & 3\\
+	  1 & 1 & 1\\
+	  3 & 3 & 1
+	 \end{matrix}
+	 \left|
+	  \begin{matrix}
+	   2\\
+	   2\\
+	   0
+	  \end{matrix}
+	 \right)
+	\right.
+	\]
+	Die Schreibweise hat aber keinerlei Auswirkungen auf die Lösung. Wir möchten
+	nun den Gaußschen Algorithmus dafür aufschreiben:\\
+
+	\textbf{1. Schritt:} Zunächst schreibt man die erweiterte Matrix auf (erweitert
+	wegen dem Strich) oder ihr schreibt die Gleichungen einfach wie bekannt
+	untereinander. Beachtet bitte, dass alle \(x_1,\ x_2,\ x_3\) jeweils
+	untereinander stehen, auf der linken Seite der Gleichung nur Summanden mit x
+	stehen und auf der rechten Seite nur die Zahlen! Am besten benennt ihr die
+	Zeilen mit römischen Ziffern, um die Rechnung übersichtlich zu halten.\\
+
+	\textbf{2. Schritt:} Wenn möglich, verschiebe die Zeilen so, dass nur in den
+	unteren Zeilen eine 0 in der ersten Spalte steht (hier würde dann das \(x_1\)
+	in der Gleichung fehlen). Dies ist in unserem Beispiel nicht der Fall, also
+	gehen wir über zum\\
+
+	\textbf{3. Schritt:} Ziehe (oder addiere) je nach Zeile das Vielfache von der
+	ersten Zeile zum Vielfachen der anderen Zeilen so ab, dass an entsprechender
+	Stelle eine 0 steht. Die erste Zeile bleibt aber stehen! So würden wir in der
+	2. Zeile | (I)-(II) haben, und in der 3. Zeile | 3(I)-(III). Daraus Folgt:
+	\[
+	\left(
+	 \begin{matrix}
+	  1 & 2 & 3\\
+	  0 & 1 & 2\\
+	  0 & 3 & 8
+	 \end{matrix}
+	 \left|
+	  \begin{matrix}
+	   2\\
+	   0\\
+	   6
+	  \end{matrix}
+	 \right)
+	\right.
+	\]
+
+	\textbf{4. Schritt:} Wiederhole Schritt 2 \& 3 so oft, bis in der letzten Zeile
+	lediglich eine Zahl auf der linken Seite übrig bleibt (nur zieht man danach von
+	der 2. Zeile ab und lässt diese stehen, usw.). Dann erhalten wir
+	(Rechenschritte: 3. Zeile wird berechnet durch 3(II)-(III)):
+	\[
+	\left(
+	 \begin{matrix}
+	  1 & 2 & 3\\
+	  0 & 1 & 2\\
+	  0 & 0 & -2
+	 \end{matrix}
+	 \left|
+	  \begin{matrix}
+	   2\\
+	   0\\
+	   -6
+	  \end{matrix}
+	 \right)
+	\right.
+	\]
+
+	\textbf{5. Schritt:} Hat man die Stufenform, gibt es 2 Möglichkeiten. Die Erste
+	ist, wir rechnen die unterste Variable einfach aus und setzen sie in die 2.
+	Zeile ein. So erhalten wir die 2. Variable. Zu guter Letzt setzen wir die 2
+	bekannten Variablen oben ein und erhalten die Letzte. In der ursprünglichen
+	Schreibweise ist das ein wenig ersichtlicher wie in der Matrix, geht jedoch
+	genau so.\\
+	Die zweite Möglichkeit ist ein wenig abstrakter, weshalb wir sie hier auch
+	nicht aufschreiben wollen, um Verwirrungen zu vermeiden. Bei Interesse werden
+	wir sie aber gerne im Kurs zeigen (sie ist allerdings nicht schwerer).\\
+
+	\textbf{6. Schritt:} Schreibe die Lösungsmenge auf, in diesem Fall wäre sie
+	\(x_1 = 5,\ x_2 =-6,\ x_3 = 3\). \\ \\
+	Nun gibt es drei Möglichkeiten, wie euer Ergebnis aussehen kann. Die erste
+	wäre, dass wir \underline{eine} Lösung haben, wie im oberen Beispiel. Wir haben
+	also für jede Variable nur eine einzige Lösung, damit alle Gleichungen
+	stimmen.\\
+	Eine andere Möglichkeit ist, dass wir keine Lösung bekommen. Das heißt, wir
+	bekommen schon bei zwei Gleichungen eine Lösung (meist wenn man weniger
+	Variablen hat wie Gleichungen) und diese passt dann aber nicht in die dritte.
+	Somit haben wir keine Lösung, die für alle Gleichungen gilt.\\
+	Und zu guter Letzt kann es auch vorkommen, dass es unendlich viele Lösungen
+	gibt. Dann steht zum Beispiel in der letzten Zeile nichts und in der zweiten
+	\(3x_2 + x_3 = 0 => x_2 = - \frac{x_3}{2}\) . So können wir \(x_2\) nur in
+	Abhängigkeit von \(x_3\) angeben (welches wir am besten noch umbenennen, zum
+	Beispiel in \(t := x_3\) ). Somit haben wir eine Möglichkeit für die Lösung für
+	jedes t, das wir einsetzen.\\
+	Keine Angst, wenn ihr das hier nicht so recht verstanden habt. Es ist schwerer
+	zu lesen (und aufzuschreiben), als wenn es vorgetragen und mit Fragen \&
+	Antworten erklärt wird ;).

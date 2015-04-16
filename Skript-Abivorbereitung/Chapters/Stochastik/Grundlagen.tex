@@ -1,30 +1,41 @@
 \section{Mathematische Grundlagen}
-Hier werden noch kurz mathematische Grundlagen angesprochen, auf die wir nachher zurückgreifen. Abgesehen davon, solltet ihr euch vor allem noch einmal mit den Regeln des Bruchrechnens und den Potenzgesetzen vertraut machen.
+	Hier werden noch kurz mathematische Grundlagen angesprochen, auf die wir
+	nachher zurückgreifen. Abgesehen davon, solltet ihr euch vor allem noch einmal
+	mit den Regeln des Bruchrechnens und den Potenzgesetzen vertraut machen.
 
-\subsection{Fakultät}
-\todo[color=red]{Kasten für Formel hinzufügen}
-\todo[color=red]{Zusammenfassung-Kasten hinzufügen}
-\todo[color=red]{Signalwörter-Kasten hinzufügen}
-Die Fakultät wird in der Mathematik als Abkürzung verwendet. Immer dann, wenn man viele aufeinanderfolgende natürliche Zahlen multipliziert, verwendet man sie. Definiert ist sie wie folgt:
-\[n!=1\cdot 2\cdot \ldots \cdot (n-1)\cdot n\ \&\ 0!=1\]
+	\subsection{Fakultät}
+		\todo[color=red]{Kasten für Formel hinzufügen}
+		\todo[color=red]{Zusammenfassung-Kasten hinzufügen}
+		\todo[color=red]{Signalwörter-Kasten hinzufügen}
+		Die Fakultät wird in der Mathematik als Abkürzung verwendet. Immer dann, wenn
+		man viele aufeinanderfolgende natürliche Zahlen multipliziert, verwendet man
+		sie. Definiert ist sie wie folgt:
+		\[n!=1\cdot 2\cdot \ldots \cdot (n-1)\cdot n\ \&\ 0!=1\]
 
-\subsection{Binomialkoeffizient}
-\todo[color=red]{Kasten für Formel hinzufügen}
-\todo[color=red]{Zusammenfassung-Kasten hinzufügen}
-\todo[color=red]{Signalwörter-Kasten hinzufügen}
-Später werden wir seinen Nutzen noch genauer sehen, jetzt brauchen wir erstmal nur dessen Definition
-\[\binom{n}{k}=\frac{n!}{(n-k)!\cdot k!}\mathrm{\ für\ alle\ }k,n\in \mathbb{N}\]
-Weiter gilt folgendes:
-\[\binom{n}{0}=\binom{n}{n}=1,\ \binom{n}{k}=\binom{n}{n-k}\]
-Für kleine $n$ könnt ihr den Binomialkoeffizienten schnell mit Hilfe eines Pascal'schen Dreiecks bestimmen.\\
-$
-\begin{array}{ccccccccccccccccccccc}
-n=0 &  &  &  &  &  & 1 &  &  &  &  &  &  &  &  &  & \binom{0}{0} &  &  &  & \\ 
-n=1 &  &  &  &  & 1 &  & 1 &  &  &  &  &  &  &  & \binom{1}{0} &  & \binom{1}{1} &  &  & \\ 
-n=2 &  &  &  & 1 &  & 2 &  & 1 &  &  & \Leftrightarrow &  &  & \binom{2}{0} &  & \binom{2}{1} &  & \binom{2}{2} &  & \\ 
-n=3 &  &  & 1 &  & 3 &  & 3 &  & 1 &  &  &  & \binom{3}{0} &  & \binom{3}{1} &  & \binom{3}{2} &  & \binom{3}{3} & \\ 
-n=4 &  & 1 &  & 4 &  & 6 &  & 4 &  & 1 &  & \binom{4}{0} &  & \binom{4}{1} &  & \binom{4}{2} &  & \binom{4}{3} &  & \binom{4}{4}\\
- & && && && && && && && && && &\\
-k= & &0& &1& &2& &3& &4& &0& &1& &2& &3& &4   
-\end{array} 
-$
+	\subsection{Binomialkoeffizient}
+		\todo[color=red]{Kasten für Formel hinzufügen}
+		\todo[color=red]{Zusammenfassung-Kasten hinzufügen}
+		\todo[color=red]{Signalwörter-Kasten hinzufügen}
+		Später werden wir seinen Nutzen noch genauer sehen, jetzt brauchen wir erstmal
+		nur dessen Definition
+		\[\binom{n}{k}=\frac{n!}{(n-k)!\cdot k!}\mathrm{\ für\ alle\ }k,n\in
+		\mathbb{N}\]
+		Weiter gilt folgendes:
+		\[\binom{n}{0}=\binom{n}{n}=1,\ \binom{n}{k}=\binom{n}{n-k}\]
+		Für kleine \(n\) könnt ihr den Binomialkoeffizienten schnell mit Hilfe eines
+		Pascal'schen Dreiecks bestimmen.\\
+		\(
+			\begin{array}{ccccccccccccccccccccc}
+				n=0 &  &  &  &  &  & 1 &  &  &  &  &  &  &  &  &  & \binom{0}{0} &  &  &  & \\ 
+				n=1 &  &  &  &  & 1 &  & 1 &  &  &  &  &  &  &  & \binom{1}{0} &  &
+				\binom{1}{1} &  &  & \\
+				n=2 &  &  &  & 1 &  & 2 &  & 1 &  &  & \Leftrightarrow &  &  & \binom{2}{0} & 
+				& \binom{2}{1} &  & \binom{2}{2} &  & \\
+				n=3 &  &  & 1 &  & 3 &  & 3 &  & 1 &  &  &  & \binom{3}{0} &  & \binom{3}{1} & 
+				& \binom{3}{2} &  & \binom{3}{3} & \\
+				n=4 &  & 1 &  & 4 &  & 6 &  & 4 &  & 1 &  & \binom{4}{0} &  & \binom{4}{1} & 
+				& \binom{4}{2} &  & \binom{4}{3} &  & \binom{4}{4}\\
+				 & && && && && && && && && && &\\
+				k= & &0& &1& &2& &3& &4& &0& &1& &2& &3& &4   
+			\end{array} 
+		\)

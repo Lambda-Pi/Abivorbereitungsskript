@@ -1,53 +1,103 @@
 \section{Begriffe}
-In der Stochastik tauchen einige neue Begriffe auf, die wir zunächst betrachten wollen, bevor wir diese dann anwenden.
+	In der Stochastik tauchen einige neue Begriffe auf, die wir zunächst betrachten
+	wollen, bevor wir diese dann anwenden.
 
-\subsection{Ereignis}
-\todo[color=red]{Kasten für Formel hinzufügen}
-\todo[color=red]{Zusammenfassung-Kasten hinzufügen}
-\todo[color=red]{Signalwörter-Kasten hinzufügen}
-Zunächst sollten wir klären, was ein Ereignis in der Stochastik ist. Betrachten wir, wie etwas ausgehen kann, so gibt es meistens mehrere Möglichkeiten, die eintreten können. Diese werden in diesem Zusammenhang auch Ereignisse genannt. Jedes mögliche Ereignis bekommt dann einen großen Buchstaben (manchmal mit Indizes) zugewiesen\footnote{Das liegt daran, dass man hier Mengen angibt und keine Zahlen oder Sonstiges. Falls ihr damit Probleme habt schaut euch nochmal das dazugehörige Kapitel im Vorgeplänkel an}. Grundsätzlich können in einem Ereignis mehrere Einzelereignisse stecken. Ist unser Ereignis, dass eine gerade Zahl gewürfelt wird, so schreibt man dies als
-\[A=\left\lbrace 2;\ 4;\ 6\right\rbrace \]
-Da unser Ereignis $A$ eine Menge ist lässt sich das Gegenereignis, welches immer dann eintritt, falls $A$ nicht eintritt, als $\bar{A}$ angeben.
+	\subsection{Ereignis}
+		\todo[color=red]{Kasten für Formel hinzufügen}
+		\todo[color=red]{Zusammenfassung-Kasten hinzufügen}
+		\todo[color=red]{Signalwörter-Kasten hinzufügen}
+		Zunächst sollten wir klären, was ein Ereignis in der Stochastik ist.
+		Betrachten wir, wie etwas ausgehen kann, so gibt es meistens mehrere
+		Möglichkeiten, die eintreten können. Diese werden in diesem Zusammenhang auch
+		Ereignisse genannt. Jedes mögliche Ereignis bekommt dann einen großen
+		Buchstaben (manchmal mit Indizes) zugewiesen\footnote{Das liegt daran, dass
+		man hier Mengen angibt und keine Zahlen oder Sonstiges. Falls ihr damit
+		Probleme habt schaut euch nochmal das dazugehörige Kapitel im Vorgeplänkel
+		an}. Grundsätzlich können in einem Ereignis mehrere Einzelereignisse stecken.
+		Ist unser Ereignis, dass eine gerade Zahl gewürfelt wird, so schreibt man dies
+		als
+		\[A=\left\lbrace 2;\ 4;\ 6\right\rbrace \]
+		Da unser Ereignis \(A\) eine Menge ist lässt sich das Gegenereignis, welches
+		immer dann eintritt, falls \(A\) nicht eintritt, als \(\bar{A}\) angeben.
 
-\subsection{Ereignismenge}
-\todo[color=red]{Kasten für Formel hinzufügen}
-\todo[color=red]{Zusammenfassung-Kasten hinzufügen}
-\todo[color=red]{Signalwörter-Kasten hinzufügen}
-Die Ereignismenge ist die Menge aller Ereignisse\footnote{Also eine Menge aller möglichen Mengen.}. Nehmen wir an, dass wir Würfeln. Es gibt also sechs mögliche Ereignisse. So würde man die Ereignismenge wie folgt darstellen:
-\[\Omega=\left\lbrace A_1;\ A_2;\ A_3;\ A_4;\ A_5;\ A_6\right\rbrace \]
-Wird gefragt, wie viele Ereignisse möglich sind, gebt niemals \(\Omega=\ldots\) an, denn die Ereignismenge ist eine Menge und allein deshalb schon keine Zahl. Was ihr dann angebt müsst ist die Anzahl der Elemente, also die Kardinalität, der Ereignismenge:
-\[\#\Omega=6\]
+	\subsection{Ereignismenge}
+		\todo[color=red]{Kasten für Formel hinzufügen}
+		\todo[color=red]{Zusammenfassung-Kasten hinzufügen}
+		\todo[color=red]{Signalwörter-Kasten hinzufügen}
+		Die Ereignismenge ist die Menge aller Ereignisse\footnote{Also eine Menge
+		aller möglichen Mengen.}. Nehmen wir an, dass wir Würfeln. Es gibt also sechs
+		mögliche Ereignisse. So würde man die Ereignismenge wie folgt darstellen:
+		\[\Omega=\left\lbrace A_1;\ A_2;\ A_3;\ A_4;\ A_5;\ A_6\right\rbrace \]
+		Wird gefragt, wie viele Ereignisse möglich sind, gebt niemals
+		\(\Omega=\ldots\) an, denn die Ereignismenge ist eine Menge und allein deshalb
+		schon keine Zahl. Was ihr dann angebt müsst ist die Anzahl der Elemente, also
+		die Kardinalität, der Ereignismenge:
+		\[\#\Omega=6\]
 
-\subsection{Wahrscheinlichkeit}
-\todo[color=red]{Kasten für Formel hinzufügen}
-\todo[color=red]{Zusammenfassung-Kasten hinzufügen}
-\todo[color=red]{Signalwörter-Kasten hinzufügen}
-Unser Ziel wird zumeist sein, die Wahrscheinlichkeit eines Ereignisses anzugeben. Das Ergebnis kann dann als Bruch (meist am bequemsten), Dezimalzahl oder als Prozentzahl angeben werden. Die Wahrscheinlichkeit P, dass das Ereignis A eintritt, ist dann (als Beispiel):
-\[P(A)=\frac{1}{2}=0,5=50\%\]
-An dieser Stelle möchten wir noch auf zwei Sätze eingehen, die uns zum Teil viel Arbeit ersparen können. Zuerst sollten wir die Nichtnegativität betrachten. Das bedeutet einfach, dass wir voraussetzen, dass alle Wahrscheinlichkeiten positive Zahlen sind (was auch Sinn macht, keine negativen Wahrscheinlichkeiten zu haben). So gilt:
-\[P(A)\geq 0 \mathrm{,\ für\ alle\ A}\]
-Weiter ist logisch nachvollziehbar, dass eines aller möglichen Ereignisse eintreten muss. Deshalb gilt auch folgende Relation:
-\[P(\Omega)=P(A_1)+P(A_2)+ \ldots+ P(A_n)=1\]
-Aus der gleichen Logik entspringt auch der folgende Ausdruck, welcher uns viel Arbeit ersparen wird. Denn die Wahrscheinlichkeit, dass ein Ereignis eintrifft \emph{und} dass es nicht eintrifft sind \(100\%\)(=1) (also die Wahrscheinlichkeiten summiert). Oder umgeschrieben:
-\[P(A)=1-P(\bar{A})\]
+	\subsection{Wahrscheinlichkeit}
+		\todo[color=red]{Kasten für Formel hinzufügen}
+		\todo[color=red]{Zusammenfassung-Kasten hinzufügen}
+		\todo[color=red]{Signalwörter-Kasten hinzufügen}
+		Unser Ziel wird zumeist sein, die Wahrscheinlichkeit eines Ereignisses
+		anzugeben. Das Ergebnis kann dann als Bruch (meist am bequemsten), Dezimalzahl
+		oder als Prozentzahl angeben werden. Die Wahrscheinlichkeit P, dass das
+		Ereignis A eintritt, ist dann (als Beispiel):
+		\[P(A)=\frac{1}{2}=0,5=50\%\]
+		An dieser Stelle möchten wir noch auf zwei Sätze eingehen, die uns zum Teil
+		viel Arbeit ersparen können. Zuerst sollten wir die Nichtnegativität
+		betrachten. Das bedeutet einfach, dass wir voraussetzen, dass alle
+		Wahrscheinlichkeiten positive Zahlen sind (was auch Sinn macht, keine
+		negativen Wahrscheinlichkeiten zu haben). So gilt:
+		\[P(A)\geq 0 \mathrm{,\ für\ alle\ A}\]
+		Weiter ist logisch nachvollziehbar, dass eines aller möglichen Ereignisse
+		eintreten muss. Deshalb gilt auch folgende Relation:
+		\[P(\Omega)=P(A_1)+P(A_2)+ \ldots+ P(A_n)=1\]
+		Aus der gleichen Logik entspringt auch der folgende Ausdruck, welcher uns viel
+		Arbeit ersparen wird. Denn die Wahrscheinlichkeit, dass ein Ereignis eintrifft
+		\emph{und} dass es nicht eintrifft sind \(100\%\)(=1) (also die
+		Wahrscheinlichkeiten summiert). Oder umgeschrieben:
+		\[P(A)=1-P(\bar{A})\]
 
-\subsection{Zufallsgröße X}
-\todo[color=red]{Kasten für Formel hinzufügen}
-\todo[color=red]{Zusammenfassung-Kasten hinzufügen}
-\todo[color=red]{Signalwörter-Kasten hinzufügen}
-Haben wir Situationen, in denen mehrfach 'gezogen' wird, so gibt unsere Zufallsgröße an, wie oft das gewählte Ereignis eintreten soll, z. B. welche k's in die Bernoulli-Formel eingesetzt werden. Dies können dann alle k's höher oder niedriger oder genau ein Wert sein. Darauf gehen wir später genauer ein.
+	\subsection{Zufallsgröße X}
+		\todo[color=red]{Kasten für Formel hinzufügen}
+		\todo[color=red]{Zusammenfassung-Kasten hinzufügen}
+		\todo[color=red]{Signalwörter-Kasten hinzufügen}
+		Haben wir Situationen, in denen mehrfach 'gezogen' wird, so gibt unsere
+		Zufallsgröße an, wie oft das gewählte Ereignis eintreten soll, z. B. welche
+		k's in die Bernoulli-Formel eingesetzt werden. Dies können dann alle k's höher
+		oder niedriger oder genau ein Wert sein. Darauf gehen wir später genauer ein.
 
-\subsection{mit / ohne Zurücklegen}
-\todo[color=red]{Kasten für Formel hinzufügen}
-\todo[color=red]{Zusammenfassung-Kasten hinzufügen}
-\todo[color=red]{Signalwörter-Kasten hinzufügen}
-Macht man mehr als eine Probe, so gibt es unterschiedliche Möglichkeiten, wie die Wahrscheinlichkeiten im nächsten Zug sind.\\
-\(\star\) Ein System, in dem die Wahrscheinlichkeiten immer gleich sind, nennen wir ein System mit Zurücklegen. Aus dem Urnenmodell ist das leicht nachvollziehbar. Ziehe ich eine bestimmte Farbe mit der Wahrscheinlichkeit P(A), lege die Kugel zurück, so haben wir die gleiche Situation wie zuvor und somit auch die gleiche Wahrscheinlichkeit. Am Beispiel des Würfels ist dies leicht klar zu machen\footnote{Das 'Zurücklegen' ist gerade in diesem Vergleich ein schlechter Begriff, da es nicht unbedingt mit Ziehen oder Legen zusammenhängen muss. Da man jedoch oft das Urnenmodell als Vergleich hat, behalten wir das trotzdem bei.}.\\
-\(\star\) Systeme ohne Zurücklegen haben genau diese Eigenschaft nicht. Nach jedem Ziehen liegt eine neue Situation vor. Deshalb muss für jeden neuen Zug die Wahrscheinlichkeit neu berechnet werden.
+	\subsection{mit / ohne Zurücklegen}
+		\todo[color=red]{Kasten für Formel hinzufügen}
+		\todo[color=red]{Zusammenfassung-Kasten hinzufügen}
+		\todo[color=red]{Signalwörter-Kasten hinzufügen}
+		Macht man mehr als eine Probe, so gibt es unterschiedliche Möglichkeiten, wie
+		die Wahrscheinlichkeiten im nächsten Zug sind.\\
+		
+		\(\star\) Ein System, in dem die Wahrscheinlichkeiten immer gleich sind,
+		nennen wir ein System mit Zurücklegen. Aus dem Urnenmodell ist das leicht
+		nachvollziehbar. Ziehe ich eine bestimmte Farbe mit der Wahrscheinlichkeit
+		P(A), lege die Kugel zurück, so haben wir die gleiche Situation wie zuvor und
+		somit auch die gleiche Wahrscheinlichkeit. Am Beispiel des Würfels ist dies
+		leicht klar zu machen\footnote{Das 'Zurücklegen' ist gerade in diesem
+		Vergleich ein schlechter Begriff, da es nicht unbedingt mit Ziehen oder Legen
+		zusammenhängen muss. Da man jedoch oft das Urnenmodell als Vergleich hat,
+		behalten wir das trotzdem bei.}.\\
+		
+		\(\star\) Systeme ohne Zurücklegen haben genau diese Eigenschaft nicht. Nach
+		jedem Ziehen liegt eine neue Situation vor. Deshalb muss für jeden neuen Zug
+		die Wahrscheinlichkeit neu berechnet werden.
 
-\subsection{Geordnet / Ungeordnet}
-\todo[color=red]{Kasten für Formel hinzufügen}
-\todo[color=red]{Zusammenfassung-Kasten hinzufügen}
-\todo[color=red]{Signalwörter-Kasten hinzufügen}
-Ungeachtet der Wahrscheinlichkeiten in einem Zug ist entscheidend, ob unser System geordnet oder ungeordnet ist, um zu entscheiden, welche und wie viele Pfade zum Erfolg führen (worauf später genauer eingegangen wird). Ein geordnetes System ist zum Beispiel eine PIN-Nummer. Selbst wenn man die Ziffern kennt und dann in der falschen Reihenfolge eingetippt, kommt man nicht ans Ziel. In diesem Beispiel gibt es also nur einen Pfad für das Eintreten des Ereignisses.\\
-Dagegen ist das Lotto spielen ein ungeordnetes System. Entscheidend ist nicht, welche Kugel als erstes gezogen wird, sondern lediglich welche Zahlen.
+	\subsection{Geordnet / Ungeordnet}
+		\todo[color=red]{Kasten für Formel hinzufügen}
+		\todo[color=red]{Zusammenfassung-Kasten hinzufügen}
+		\todo[color=red]{Signalwörter-Kasten hinzufügen}
+		Ungeachtet der Wahrscheinlichkeiten in einem Zug ist entscheidend, ob unser
+		System geordnet oder ungeordnet ist, um zu entscheiden, welche und wie viele
+		Pfade zum Erfolg führen (worauf später genauer eingegangen wird). Ein
+		geordnetes System ist zum Beispiel eine PIN-Nummer. Selbst wenn man die
+		Ziffern kennt und dann in der falschen Reihenfolge eingetippt, kommt man nicht
+		ans Ziel. In diesem Beispiel gibt es also nur einen Pfad für das Eintreten des
+		Ereignisses.\\
+		Dagegen ist das Lotto spielen ein ungeordnetes System. Entscheidend ist nicht,
+		welche Kugel als erstes gezogen wird, sondern lediglich welche Zahlen.
