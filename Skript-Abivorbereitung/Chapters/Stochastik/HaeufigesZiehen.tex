@@ -5,9 +5,9 @@
 	die vier möglichen Situationen, die es in der diskreten Statistik gibt.
 
 	\subsection{mit Zurücklegen - geordnet}
-		\todo[color=red]{Kasten für Formel hinzufügen}
-		\todo[color=red]{Zusammenfassung-Kasten hinzufügen}
-		\todo[color=red]{Signalwörter-Kasten hinzufügen}
+		\todo[color=green]{Kasten für Formel hinzufügen}
+		\todo[inline,color=red]{Zusammenfassung-Kasten hinzufügen}
+		\todo[inline,color=red]{Signalwörter-Kasten hinzufügen}
 		Hier lassen sich Wahrscheinlichkeiten mit etwas Überlegung einfach bestimmen,
 		da die Wahrscheinlichkeit pro Versuch sich nicht verändert. Dank des
 		Kommutativgesetzes (= des Vertauschungsgesetzes) kann man die
@@ -15,8 +15,8 @@
 		multipliziert das dann mit den Gegenwahrscheinlichkeiten (hoch dem Rest n-k,
 		also so oft das Ergebnis nicht eintritt). Soll bei n Versuchen k mal der
 		Erfolg eintreten (deshalb P(X=k)), gilt in dem Fall
-		\[P(E)=P(A)^k\cdot P(\overline{A})^{n-k} \Rightarrow\] \[P(X=k)=p^k\cdot
-		(1-p)^{n-k}\]
+		\[P(E)=P(A)^k\cdot P(\overline{A})^{n-k} \Rightarrow\]
+		\formel{\[P(X=k)=p^k\cdot(1-p)^{n-k}\]}
 		da ja die Wahrscheinlichkeit für das Nicht-Eintreten pro Pfad mitberechnet
 		werden muss. Ob alle Ereignisse nun immer zuerst und danach alle
 		Gegenereignisse eintreten oder ob das ganze gemischt auftritt, ist für die
@@ -25,9 +25,9 @@
 		verändern oder verlassen.
 
 	\subsection{mit Zurücklegen - ungeordnet (Bernoulli-Formel)}
-		\todo[color=red]{Kasten für Formel hinzufügen}
-		\todo[color=red]{Zusammenfassung-Kasten hinzufügen}
-		\todo[color=red]{Signalwörter-Kasten hinzufügen}
+		\todo[color=green]{Kasten für Formel hinzufügen}
+		\todo[inline,color=red]{Zusammenfassung-Kasten hinzufügen}
+		\todo[inline,color=red]{Signalwörter-Kasten hinzufügen}
 		\(\star\) Damit ein Bernoulli-Versuch vorliegt, muss folgendes gelten: Man
 		kann den Versuch auf Eintreten \& Nicht-Eintreten reduzieren, da die
 		Wahrscheinlichkeiten immer gleich bleiben (mit Zurücklegen) und die
@@ -40,5 +40,5 @@
 		die gleiche Wahrscheinlichkeit haben, kann man die Anzahl der dazugehörigen
 		Pfade auch multiplizieren. Doch wie viele sind das? Nun, hier ist wieder der
 		Binomialkoeffizient gefragt. Somit ergibt sich bei n Versuchen mit k Treffern
-		\[P(X=k)=B(k,p,n)=\binom{n}{k}\cdot p^k\cdot (1-p)^{n-k}\] wobei 1-p die
-		Gegenwahrscheinlichkeit vom Ereignis ist.
+		\formel{\[P(X=k)=B(k,p,n)=\binom{n}{k}\cdot p^k\cdot (1-p)^{n-k}\]}
+		wobei 1-p die Gegenwahrscheinlichkeit vom Ereignis ist.

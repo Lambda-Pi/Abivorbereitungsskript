@@ -1,14 +1,14 @@
 \section{Ebenen}
-	\todo[color=red]{Kasten für Formel hinzufügen}
-	\todo[color=red]{Zusammenfassung-Kasten hinzufügen}
-	\todo[color=red]{Signalwörter-Kasten hinzufügen}
+	\todo[color=purple]{Kasten für Formel hinzufügen}
+	\todo[inline,color=red]{Zusammenfassung-Kasten hinzufügen}
+	\todo[inline,color=red]{Signalwörter-Kasten hinzufügen}
 	Ebenso wie Geraden, können wir im 3D-Raum auch Ebenen darstellen. Dafür gibt es
 	drei verschiedene Möglichkeiten die wir verwenden.
 
 	\subsection{Parameterform}
-		\todo[color=red]{Kasten für Formel hinzufügen}
-		\todo[color=red]{Zusammenfassung-Kasten hinzufügen}
-		\todo[color=red]{Signalwörter-Kasten hinzufügen}
+		\todo[color=green]{Kasten für Formel hinzufügen}
+		\todo[inline,color=red]{Zusammenfassung-Kasten hinzufügen}
+		\todo[inline,color=red]{Signalwörter-Kasten hinzufügen}
 		Um eine Ebene anhand von drei Punkten aufzustellen, ist die Parameterform am
 		einfachsten. Sie ähnelt der Geradengleichung (ist also übersichtlicher auf dem
 		ersten Blick) und die anderen beiden Formen lassen sich daraus leicht
@@ -18,12 +18,12 @@
 		einem gleich zwei 'Richtungsvektoren', die Spannvektoren genannt werden (sie
 		Spannen die Ebene auf). Diese berechnet man, indem man zwei Vektoren zwischen
 		je zwei Punkten berechnet und eine skalare Variable mit ihnen multipliziert:
-		\[E:\ \vec{x}=\vec{a}+s\cdot \vec{b}+t\cdot \vec{c}\]
+		\formel{\[E:\ \vec{x}=\vec{a}+s\cdot \vec{b}+t\cdot \vec{c}\]}
 
 	\subsection{Normalenform}
-		\todo[color=red]{Kasten für Formel hinzufügen}
-		\todo[color=red]{Zusammenfassung-Kasten hinzufügen}
-		\todo[color=red]{Signalwörter-Kasten hinzufügen}
+		\todo[color=green]{Kasten für Formel hinzufügen}
+		\todo[inline,color=red]{Zusammenfassung-Kasten hinzufügen}
+		\todo[inline,color=red]{Signalwörter-Kasten hinzufügen}
 		Mit der Normalenform können wir leichter rechnen, vergleichen und Abstände
 		bestimmen. Die Überlegung dahinter ist ein wenig umständlicher, bei näherer
 		Betrachtung aber nicht zwingend schwerer. Zuerst müssen wir den Normalenvektor
@@ -41,19 +41,19 @@
 		irgendwie anders im Raum, aber nicht auf der Ebene. Das heißt, wenn wir den
 		neu berechneten Vektor mit dem Normalenvektor skalar multiplizieren und der
 		Punkt liegt auf der Ebene, so ist das Ergebnis 0:
-		\[E:\ (\vec{a}-\vec{x})\cdot\vec{n}=0\]
+		\formel{\[E:\ (\vec{a}-\vec{x})\cdot\vec{n}=0\]}
 		Wichtig hier zu erwähnen ist auch die hessesche Normalform. Diese
 		unterscheidet sich lediglich durch den normierten Normalenvektor (dargestellt
 		als \(\hat n\)). Normiert heißt hier, dass wir ihn durch die Länge teilen, er
 		also nur noch die Länge 1 hat. Somit sieht die Hess'sche Normalenform um den
 		Abstand d zu einem Punkt zu ermitteln, wie folgt aus:
-		\[E:\ (\vec{a}-\vec{x})\cdot \frac{1}{|\vec{n}|}\vec{n}=(\vec{a}-\vec{x})\cdot
-		\hat{n}=d\]
+		\formel{\[E:\ (\vec{a}-\vec{x})\cdot
+		\frac{1}{|\vec{n}|}\vec{n}=(\vec{a}-\vec{x})\cdot \hat{n}=d\]}
 
 	\subsection{Koordinatenform}
-		\todo[color=red]{Kasten für Formel hinzufügen}
-		\todo[color=red]{Zusammenfassung-Kasten hinzufügen}
-		\todo[color=red]{Signalwörter-Kasten hinzufügen}
+		\todo[inline,color=red]{Kasten für Formel hinzufügen}
+		\todo[inline,color=red]{Zusammenfassung-Kasten hinzufügen}
+		\todo[inline,color=red]{Signalwörter-Kasten hinzufügen}
 		An der Koordinatenform gibt es nicht viel zu verstehen. Wir müssen nur lernen,
 		sie aufzustellen. Letztendlich ist sie aber eine Umformung der Normalenform.
 		Hierzu brauchen wir zuerst den Normalenvektor, welchen wir mit dem erst einmal
@@ -62,10 +62,10 @@
 		entsprechenden x-Zeile ein, usw.}. Auf der rechten Seite der Gleichung steht
 		dann die Zahl w, die raus kommt, wenn wir das Skalarprodukt einmal ausrechnen,
 		indem wir den Stützvektor \(\vec{a}\) für \(\vec{x}\) einsetzen:
-		\[n_1x_1+n_2x_2+n_3x_3=w \mathrm{\ (anders\ geschrieben\ } \vec{n}\cdot
-		\vec{x}=w)\]
+		\formel{\[n_1x_1+n_2x_2+n_3x_3=w \mathrm{\ (anders\ geschrieben\ }
+		\vec{n}\cdot \vec{x}=w)\]}
 		Analog zur Hesseschen Normalform ist es auch möglich, die
 		Koordinatenform anzugeben, indem man zuerst w abzieht und dann den gesamten
 		Term durch die Länge des Normalenvektors teilt. So bekommt man den Abstand d
 		der Ebene zum Punkt \(\vec{x}\):
-		\[\frac{n_1x_1+n_2x_2+n_3x_3-w}{|\vec{n}|}=d\]
+		\formel{\[\frac{n_1x_1+n_2x_2+n_3x_3-w}{|\vec{n}|}=d\]}
