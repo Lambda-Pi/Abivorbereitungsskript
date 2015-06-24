@@ -1,7 +1,7 @@
 \subsection{Anwendung von Ableitungen}
 	\todo[color=purple]{Kasten für Formel hinzufügen}
-	\todo[inline,color=red]{Zusammenfassung-Kasten hinzufügen}
-	\todo[inline,color=red]{Signalwörter-Kasten hinzufügen}
+	\todo[color=green]{Zusammenfassung-Kasten hinzufügen}
+	\todo[color=green]{Signalwörter-Kasten hinzufügen}
 	Ableitungen sind letztendlich ein Instrument, mit dem wir Eigenschaften von
 	Funktionen überprüfen können oder mit denen wir Eigenschaften beschreiben und
 	in die Mathematik übersetzen können.\\
@@ -32,11 +32,27 @@
 
 	\(\star\) Eine weitere wichtige Möglichkeit zur Anwendung von Ableitungen ist
 	die Berechnung von Extrem- \& Wendepunkten.
+	
+	\summary{
+		Ableitungen werden verwendet um
+		\begin{itemize}
+		  \item Änderungsraten zu bestimmen.
+		  \item geometrische Informationen in die Sprache der Mathematik umzuwandeln.
+		  \item Extrem- \& Wendepunkte zu berechnen
+		\end{itemize}
+	}
+	
+	\tags{
+		Ableitung, Änderungsrate, Extempunkte, Wendepunkte,
+		\(\frac{\textit{Einheit}}{\textit{Andere Einheit}}\), tangiert, orthogonal /
+		Normale 
+	}
+	
 
 	\subsubsection{Extrempunkte}
 		\todo[color=purple]{Kasten für Formel hinzufügen}
-		\todo[inline,color=red]{Zusammenfassung-Kasten hinzufügen}
-		\todo[inline,color=red]{Signalwörter-Kasten hinzufügen}
+		\todo[color=green]{Zusammenfassung-Kasten hinzufügen}
+		\todo[color=green]{Signalwörter-Kasten hinzufügen}
 		Um diese zu bestimmen,  brauchen wir die ersten beiden Ableitungen. Zuerst
 		bestimmt man die Nullstellen der ersten Ableitung, denn an Extrempunkten haben
 		Funktionen immer die Steigung 0. Somit haben wir schon mal Stellen, an denen
@@ -64,22 +80,82 @@
 		Die ersten zwei Ableitungen sind \(f'(x)=x^3+2x,\ f''(x)=3x^2+2\). Eine der
 		potentiellen Extremstellen ist 0 (denn f'(0)=0). Eingesetzt in die zweite
 		Ableitung ergibt f''(0)=2>0, also haben wir einen Tiefpunkt vorliegen.
+		
+		\summary{
+			Um einen Extrempunkt zu bestimmen muss man
+			\begin{enumerate}
+			  \item erste und zweite Ableitung bilden.
+			  \item erste Ableitung 0 setzen und alle Lösungen für x finden.
+			  \item die Stellen (Lösungen aus dem vorherhigen Punkt) in die 2-te
+			  Ableitung einsetzen:
+			  \begin{itemize}
+			    \item \(f''(x_i)<0\): es handelt sich um einen Hochpunkt
+			    \item \(f''(x_i)>0\): es handelt sich um einen Tiefpunkt
+			    \item \(f''(x_i)=0\): es ist nicht sicher um was für ein Extrema es sich
+			    handelt \(\Rightarrow\) Folgendes ist zu tun für jede gefundene Stelle:
+			    \begin{enumerate}
+			      \item eine Stelle vor und eine hinter der gefundenen Stelle in die 1-te
+			      Ableitung einsetzen.
+			      \item Vorzeichenwechsel betrachten:
+			      \begin{itemize}
+			        \item von + nach -: Hochpunkt
+			        \item von - nach +: Tiefpunkt
+			        \item von - nach - oder von + nach +: Sattelpunkt
+			      \end{itemize}
+			    \end{enumerate}
+			  \end{itemize}
+			  \item Die Stellen in die ursprüngliche Funktion f(x) einsetzen um die
+			  Funktionswerte zu bekommen
+			  \item Die Tief-, Hoch- und Sattelpunkte aufschreiben
+			\end{enumerate}
+		}
+		
+		\tags{
+			Hoch- / Tiefpunkt, höchster / tiefster (Funktionswert), lokales Minima /
+			Maxima
+		}
 
 	\subsubsection{Wendepunkte}
 		\todo[color=purple]{Kasten für Formel hinzufügen}
-		\todo[inline,color=red]{Zusammenfassung-Kasten hinzufügen}
-		\todo[inline,color=red]{Signalwörter-Kasten hinzufügen}
+		\todo[color=green]{Zusammenfassung-Kasten hinzufügen}
+		\todo[color=purple]{Signalwörter-Kasten hinzufügen}
 		Wendestellen / -punkte berechnet man ganz ähnlich wie Extrempunkte. Allerdings
 		berechnen wir hier die Extrempunkte der ersten Ableitung. Die Nullstelle der
 		zweiten Ableitung, eingesetzt in die dritte Ableitung, gibt uns die
 		Richtungsänderung. Ändert sich die Kurve der Funktion von links nach rechts,
 		haben wir bei der dritten Ableitung einen negativen Wert (\(f'''(x_w)<0)\),
 		also der Hochpunkt der ersten Ableitung) und umgekehrt.
+		
+		\summary{
+			Um Wendepunkte zu bestimmen muss man
+			\begin{enumerate}
+			  \item zweite und dritte Ableitung bilden.
+			  \item zweite Ableitung 0 setzen und alle Lösungen für x finden.
+			  \item die Stellen (Lösungen aus dem vorherhigen Punkt) in die 2-te
+			  Ableitung einsetzen:
+			  \begin{itemize}
+			    \item \(f'''(x_i)<0\) oder \(f'''(x_i)>0\): es handelt sich um eine
+			    Wendestelle
+			    \item \(f'''(x_i)=0\) es kann nicht gesagt werden ob es sich um eine
+			    Wendestelle handelt. Folgendes ist zu tun für jede gefundene Stelle:
+			    \begin{enumerate}
+			      \item eine Stelle vor und eine hinter der gefundenen Stelle in die 2-te
+			      Ableitung einsetzen.
+			      \item findet ein Vorzeichenwechsel statt: es handelt sich um eine
+			      Wendestelle, findet keiner statt handelt es sich nicht um eine
+			      Wendestelle.
+			    \end{enumerate}
+			  \end{itemize}
+			  \item Die Stellen in die ursprüngliche Funktion f(x) einsetzen um die
+			  Funktionswerte zu bekommen.
+			  \item Die Wendepunkte aufschreiben.
+			\end{enumerate}
+		}
 	
 	\subsubsection{Winkel zwischen Funktionen und Achsen}
 		\todo[color=green]{Kasten für Formel hinzufügen}
-		\todo[inline,color=red]{Zusammenfassung-Kasten hinzufügen}
-		\todo[inline,color=red]{Signalwörter-Kasten hinzufügen}
+		\todo[color=green]{Zusammenfassung-Kasten hinzufügen}
+		\todo[color=green]{Signalwörter-Kasten hinzufügen}
 		\(\star\) Um den Winkel zwischen einer Funktion und der x-Achse zu berechnen,
 		brauchen wir zunächst die erste Ableitung, um so die Steigung an der
 		entsprechenden Stelle zu bekommen. Mit einer Skizze kann man sich nun
@@ -99,3 +175,23 @@
 		und einen kleineren und immer ist  der kleinere der Gesuchte ! Ist euer
 		berechneter Winkel größer als \(90^\circ\), so zieht ihr diesen einfach von
 		\(180^\circ\) ab.
+		
+		\summary{
+			Um den Winkel zwischen der Funktion an einer bestimmten Stelle \(x_0\) und
+			der x-Achse zu bestimmen muss man:
+			\begin{enumerate}
+			  \item Die erste Ableitung der Funktion bilden.
+			  \item die Formel von oben benutzen um den Winkel zu berechnen.
+			\end{enumerate}
+			Soll der Winkel zwischen zwei Funktionen an einer Stelle bestimmt werden muss
+			man zusätzlich:
+			\begin{enumerate}
+			  \item die Schritte von oben für die zweite Funktion wiederholen um den
+			  Winkel mit der x-Achse zu bestimmen.
+			  \item die beiden Winkel voneinander abziehen.
+			\end{enumerate}
+		}
+		
+		\tags{
+			einschließender Winkel zwischen Funktionen, Anstiegswinkel
+		}
