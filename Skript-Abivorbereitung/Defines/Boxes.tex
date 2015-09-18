@@ -24,25 +24,30 @@
 		\linewidth}{%
 			#1
 		}
-	} \\
+	}
+	\\
 }
 
 % Zusammenfassung
 \newcommand{\summary}[1]{
+	\begin{center}
 	\fcolorbox{BoxBorderframe}{BoxBackground}{%
 		\parbox{\linewidth}{%
 			\large{\textbf{Zusammenfassung:}}\\
 			#1
 		}
 	}
+	\end{center}
 }
 
 % Signalwörter
 \newcommand{\tags}[1]{
+	\begin{center}
 	\fcolorbox{BoxBorderframe}{BoxBackground}{%
 		\parbox{\linewidth}{%
 			\large{\textbf{Signalwörter:}}\\
 			#1
 		}
 	}
+	\end{center}
 }

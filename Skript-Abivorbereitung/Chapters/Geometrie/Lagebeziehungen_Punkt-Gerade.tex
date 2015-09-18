@@ -1,7 +1,7 @@
 \subsection{Punkt - Gerade}
 	\todo[color=green]{Kasten für Formel hinzufügen}
-	\todo[inline,color=red]{Zusammenfassung-Kasten hinzufügen}
-	\todo[inline,color=red]{Signalwörter-Kasten hinzufügen}
+	\todo[color=green]{Zusammenfassung-Kasten hinzufügen}
+	\todo[color=purple]{Signalwörter-Kasten hinzufügen}
 	Hier wollen wir den kleinsten Abstand von der Geraden zum Punkt
 	berechnen\footnote{tatsächlich gibt es ja unendlich viele Abstände,
 	entscheidend ist aber in der Mathematik immer der Kürzeste.}.\\
@@ -23,3 +23,19 @@
 	auf der Geraden)\footnote{Vor allem durch das Kreuzprodukt scheint das ganze
 	recht komplex auszusehen. Letztendlich ist aber auch das schnell eingeübt.}:
 	\formel{\[d=\frac{|(\vec{a}-\vec{x})\times \vec{b}|}{|\vec{b}|}\]}
+	
+	\summary{
+		Entweder man nimmt die Formel oder:
+		\begin{enumerate}
+		  \item Punkt in die Gerade einsetzen. Geht das Gleichungssystem auf, so liegt
+		  der Punkt auf der Ebene und der Abstand ist 0.
+		  \item Sonst muss man die Hilfsebene aufstellen:
+		  \begin{itemize}
+		    \item Als Stützvektor wird der Punkt genommen dessen Abstand berechnet
+		    werden soll.
+		    \item Der Normalenvektor entspricht dem Richtungsvektor der Geraden.
+		  \end{itemize}
+		  \item Hilfsebene und Gerade gleichsetzen um den Schnittpunkt zu bekommen.
+		  \item Abstand zwischen Schnittpunkt und Punkt bestimmen.
+		\end{enumerate}
+	}
