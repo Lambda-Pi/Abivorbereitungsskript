@@ -7,9 +7,9 @@
 		Als erstes müssen wir aus dem Aufgabentext herauslesen, wie unsere
 		Nullhypothese \(H_0\) aussieht, falls sie nicht gegeben ist.\\
 		In unserem Beispiel lautet \(H_0:\ p_0\leq 0.10\). Um nun unsere alternative
-		Hypothese aufzustellen müssen wir von einer schlechteren Wahrscheinlichkeit
+		Hypothese aufzustellen, müssen wir von einer schlechteren Wahrscheinlichkeit
 		ausgehen. Es gilt also: \(H_1:\ p>0.10\).\\
-		Der nächste Schritt ist die Entscheidung, ob es sich um eine links- oder
+		Der nächste Schritt ist die Entscheidung, ob es sich um einen links- oder
 		rechtsseitigen Test handelt. Dabei gibt es eine klare
 		Regel\footnote{Verschiebt sich der Graph der Verteilung nach links ist es ein
 		linksseitiger Test, verschiebt er sich nach rechts ist es ein rechtsseitiger
@@ -21,12 +21,16 @@
 		\todo[color=green]{Kasten für Formel hinzufügen}
 		\todo[color=purple]{Zusammenfassung-Kasten hinzufügen}
 		\todo[color=purple]{Signalwörter-Kasten hinzufügen}
-		Bei einem linksseitigem Test werden alle Wahrscheinlichkeiten bis zu unserem
+		Bei einem linksseitigen Test werden alle Wahrscheinlichkeiten bis zu unserem
 		Grenzwert \(k\) addiert und hier kommt das einzig mathematisch Neue die
 		Ungleichung:
+		\\ \\
 		\formel{\[P(X\geq k)=B(n,p_0,0)+B(n,p_0,1)+\ldots+B(n,p_0,k) \leq \alpha\]}
+		\\ \\
 		Bei einem Rechtsseitigen Test entsprechen umgekehrt:
+		\\ \\
 		\formel{\[P(X\leq k)=B(n,p_0,k)+B(n,p_0,k+1)+\ldots+B(n,p_0,n) \leq \alpha\]}
+		\\ \\
 		Nun muss die passende Gleichung nur noch nach \(k\) aufgelöst werden. Dabei
 		gibt es zwei Möglichkeiten\footnote{Für Maple Schüler bietet sich der Summen-Weg
 		an, da dieser von Maple übersichtlicher dargestellt wird. GTR Schüler müssen
@@ -39,7 +43,7 @@
 		\text{Für den rechtsseitigen Test:}\sum_{i=k}^{n}B(n,p_0,i)\leq \alpha\]
 		
 		\(\star\) Oder das Lösen mit Hilfe einer Wertetabelle.
-		Bei unserem Beispiel handelt es sich um einen rechtsseitigen Test da kein
+		Bei unserem Beispiel handelt es sich um einen rechtsseitigen Test, da kein
 		\(\alpha\) in der Aufgabestellung gegeben war. Wir haben mit
 		\(\alpha=0.05\)\footnote{Standardwerte für \(\alpha\) sind \(0.01,\ 0.05\) und
 		\(0.10\)} gerechnet. Die Berechnungen ergeben:

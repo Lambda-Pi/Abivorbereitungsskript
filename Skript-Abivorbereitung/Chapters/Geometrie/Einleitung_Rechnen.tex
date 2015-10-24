@@ -1,13 +1,14 @@
 \subsection{Rechnen mit Vektoren}
 	Da die Vektoren erst neu dazu kamen, sollten wir zunächst noch einmal kurz auf
 	die Grundrechenarten eingehen und wie diese bei Vektoren angewendet werden.
-
+	\\ \\ \\ \\
 	\subsubsection{Addition}
 		\todo[color=green]{Kasten für Formel hinzufügen}
 		\todo[color=purple]{Zusammenfassung-Kasten hinzufügen}
 		\todo[color=purple]{Signalwörter-Kasten hinzufügen}
 		Die Addition von Vektoren ist recht simpel. Wir addieren einfach die einzelnen
-		Zeilen zueinander:
+		Zeilen:
+		\\ \\
 		\formel{
 			\[\vec{a}+\vec{b}=
 			\begin{pmatrix}
@@ -26,6 +27,7 @@
 			 a_3+b_3
 			\end{pmatrix} \]
 		}
+		\\ \\
 		Hier wird vielleicht auch ersichtlich, wie sich die Richtung eines Vektors
 		zusammensetzt, wenn man ihn wie folgt umschreibt:
 		\[\vec{a}=
@@ -58,6 +60,7 @@
 		Entsprechend kann man auch zwei Vektoren voneinander abziehen. Die Subtraktion
 		erfolgt analog zur Addition. Damit kann man auch den Vektor zwischen zwei
 		Punkten berechnen (Ziel minus Angriff):
+		\\ \\
 		\formel{
 			\[\vec{a}-\vec{b}=\begin{pmatrix}
 			 a_1-b_1\\
@@ -71,10 +74,11 @@
 		\todo[color=purple]{Zusammenfassung-Kasten hinzufügen}
 		\todo[color=purple]{Signalwörter-Kasten hinzufügen}
 		Mit einem Faktor kann man einen Vektor ums c-Fache vergrößern (oder
-		Verkleinern), bzw. mit einem negativen Faktor die Richtung des Vektors auch um
+		verkleinern), bzw. mit einem negativen Faktor die Richtung des Vektors auch um
 		\(180^{\circ}\) drehen. Der Pfeil auf der Linie ist dann einfach auf der
 		anderen Seite. Steht der skalare Faktor vor (oder auch hinter) dem Vektor, so
 		ist das das Gleiche, wie wenn man das Skalar mit jeder Zeile multipliziert:
+		\\ \\
 		\formel{
 			\[c\cdot \vec{a}=
 			\begin{pmatrix}
@@ -90,8 +94,9 @@
 		\todo[color=purple]{Zusammenfassung-Kasten hinzufügen}
 		\todo[color=purple]{Signalwörter-Kasten hinzufügen}
 		Will man die Länge eines Vektors ermitteln, so bekommt man ein Skalar mit eben
-		dieser Länge. Man berechnet diesen, indem man den Satz des Pythagoras
+		dieser Länge. Man berechnet diese, indem man den Satz des Pythagoras
 		anwendet, allerdings für 3 Dimensionen. Das sieht dann wie folgt aus:
+		\\ \\
 		\formel{\[|\vec{a}|=\sqrt{a_1^2+a_2^2+a_3^2}\]}
 	
 	\subsubsection{Skalarprodukt}
@@ -103,9 +108,11 @@
 		Länge des anderen Vektors. Wie man sich das genauer vorstellen kann, findet
 		man im Internet oder hier in unserem Kurs ;). Man berechnet das Skalarprodukt
 		wie folgt:
+		\\ \\
 		\formel{\[\vec{a}\cdot \vec{b}=a_1\cdot b_1+a_2\cdot b_2+a_3\cdot b_3\]}
+		\\ \\
 		Somit haben wir aus zwei Vektoren ein Skalar (eine Zahl) gemacht. Welche
-		Bedeutung dies hat sehen wir, wenn wir uns die Definition genauer anschauen.
+		Bedeutung dies hat, sehen wir, wenn wir uns die Definition genauer anschauen.
 		Mathematisch sieht diese wie folgt aus:
 		\[\vec{a}\cdot \vec{b}=|\vec{a}|\cdot |\vec{b}|\cdot cos(\varphi)\]
 		Mit dieser Relation kann man die Projektion erkennen und sieht auch, dass zwei
@@ -117,6 +124,7 @@
 		kleineren Winkel an. Bekommt ihr also einen Winkel der größer ist als
 		\(90^{\circ}\), so ist euer richtiger Winkel einfach:
 		\(\alpha=180^{\circ}-\beta\)}:
+		\\ \\
 		\formel{\[cos(\varphi)=\frac{ | \vec{a}\cdot \vec{b} | }{|\vec{a}|\cdot
 		|\vec{b}|}\]}
 
@@ -136,6 +144,7 @@
 		Kreuzprodukts (welcher ein Vektor ist) schreibt man \(a_2\cdot b_3-a_3\cdot
 		b_2\). Nun schreibt man in den weiteren Zeilen jeweils den Buchstaben ab und
 		addiert immer 1 auf die Indizes (aus einer 3 wird dann eine 1!):
+		\\ \\
 		\formel{
 			\[\vec{a} \times \vec{b}=
 			\begin{pmatrix}
@@ -144,15 +153,16 @@
 			 a_1b_2-a_2b_1
 			\end{pmatrix}\]
 		}
+		\\ \\
 		Es gibt auch noch eine weitere Methode, die wir hier aber nicht schriftlich
 		festhalten wollen. Diese besprechen wir dann im Kurs selbst.\\
 		Das Kreuzprodukt hat aber auch noch eine weitere Eigenschaft. Der Betrag des
 		Kreuzprodukts gibt die Fläche des Parallelogramms an, dass durch die beiden
-		Vektoren aufgespannt ist. Die Hälfte ist dann entsprechend das Dreieck das die
-		beiden Vektoren aufspannen. Diese Eigenschaft kann sehr hilfreich sein wenn
-		Flächen berechnet werden sollen, oftmals ist es am einfachsten die Fläche in
+		Vektoren aufgespannt ist. Die Hälfte ist dann entsprechend das Dreieck, das
+		die beiden Vektoren aufspannen. Diese Eigenschaft kann sehr hilfreich sein wenn
+		Flächen berechnet werden sollen, oftmals ist es am einfachsten die Fläche, in
 		Dreiecke zu zerlegen, und entsprechend mit dem Betrag des Kreuzprodukts diese
-		zu Berechnen.
+		zu berechnen.
 		
 		\summary{
 			Das Kreuzprodukt kann für 2 Sachen genutzt werden:
@@ -187,4 +197,5 @@
 		diese Vektoren linear unabhängig sind (wäre die letzte Zeile -16 so würde es
 		passen). Linear abhängig sind zwei Vektoren, wenn sich ein k finden lässt,
 		sodass gilt:
+		\\ \\
 		\formel{\[\vec{a}=k\cdot \vec{b}\]}
